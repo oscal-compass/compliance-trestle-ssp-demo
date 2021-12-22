@@ -1,0 +1,41 @@
+{
+  "profile": {
+    "uuid": "7bd0c149-c1ce-4278-8709-84d8585af4ce",
+    "metadata": {
+      "title": "ACME Inc. official controls profile.",
+      "last-modified": "2021-12-22T13:19:19.423925+11:00",
+      "version": "0.0.1",
+      "oscal-version": "1.0.0",
+      "remarks": "Abbreviated for demonstration purposes."
+    },
+    "imports": [
+      {
+        "href": "trestle://catalogs/NIST_800-53_r4/catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ac-1",
+              "ac-2",
+              "ac-2.1",
+              "sc-1",
+              "sc-2"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "trestle://catalogs/ACME_custom/catalog.json",
+        "include-all": {}
+      }
+    ],
+    "merge": {
+      "combine": {
+        "method": "merge"
+      },
+      "as-is": true
+    },
+    "modify": {
+      "alters": []
+    }
+  }
+}

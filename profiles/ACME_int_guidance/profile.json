@@ -1,0 +1,26 @@
+{
+  "profile": {
+    "uuid": "1a5af54b-6fd4-4f86-ad9c-74881d4ea436",
+    "metadata": {
+      "title": "ACME Inc. internal controls profile.",
+      "last-modified": "2021-12-22T13:22:18.867670+11:00",
+      "version": "0.0.1",
+      "oscal-version": "1.0.0"
+    },
+    "imports": [
+      {
+        "href": "trestle://profiles/ACME_Official/profile.json",
+        "include-all": {}
+      }
+    ],
+    "merge": {
+      "combine": {
+        "method": "merge"
+      },
+      "as-is": true
+    },
+    "modify": {
+      "alters": []
+    }
+  }
+}

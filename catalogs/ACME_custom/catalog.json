@@ -1,0 +1,42 @@
+{
+  "catalog": {
+    "uuid": "84152e1c-654a-4971-8035-48b4e62f153c",
+    "metadata": {
+      "title": "REPLACE_ME",
+      "last-modified": "2021-12-23T10:16:41.585139+11:00",
+      "version": "REPLACE_ME",
+      "oscal-version": "1.0.0"
+    },
+    "controls": [],
+    "groups": [
+      {
+        "id": "cc",
+        "title": "",
+        "controls": [
+          {
+            "id": "cc-1",
+            "title": "Energy consumption"
+          },
+          {
+            "id": "cc-2",
+            "title": "Carbon reporting"
+          }
+        ]
+      },
+      {
+        "id": "pr",
+        "title": "",
+        "controls": [
+          {
+            "id": "pr-1",
+            "title": "Right to access and deletion of records"
+          },
+          {
+            "id": "pr-2",
+            "title": "Registering exemptions to right to delete"
+          }
+        ]
+      }
+    ]
+  }
+}

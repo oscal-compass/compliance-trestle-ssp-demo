@@ -68,4 +68,7 @@ A sync between the OSCAL and markdown equaivalents can be triggered by running `
   - The net result: keep any markdown includes in the same folder as the output of `trestle author jinja`
 - Magic data:
   - `x-trestle-fedramp` props are magic data at the moment with trestle, and must come from the `-y` argument.
+- Bugs:
+  - https://github.com/IBM/compliance-trestle/issues/966
+  - https://github.com/IBM/compliance-trestle/issues/967
   - 

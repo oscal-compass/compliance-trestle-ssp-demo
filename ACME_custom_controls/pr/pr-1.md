@@ -1,4 +1,4 @@
-# pr-1 - \[\] Right to access and deletion of records
+# pr-1 - \[Privacy\] Right to access and deletion of records
 
 ## Control Statement
 

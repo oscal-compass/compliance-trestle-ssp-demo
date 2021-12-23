@@ -1,4 +1,4 @@
-# pr-2 - \[\] Registering exemptions to right to delete
+# pr-2 - \[Privacy\] Registering exemptions to right to delete
 
 ## Control Statement
 

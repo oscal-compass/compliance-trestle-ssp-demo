@@ -71,4 +71,4 @@ A sync between the OSCAL and markdown equaivalents can be triggered by running `
 - Bugs:
   - https://github.com/IBM/compliance-trestle/issues/966
   - https://github.com/IBM/compliance-trestle/issues/967
-  - 
+  - https://github.com/IBM/compliance-trestle/issues/968

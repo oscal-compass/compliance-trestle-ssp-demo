@@ -1,4 +1,4 @@
-# cc-2 - \[Climate Change\] Carbon reporting
+# cc-2 - \[\] Carbon reporting
 
 ## Control Statement
 

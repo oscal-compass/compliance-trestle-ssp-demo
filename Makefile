@@ -31,7 +31,7 @@ bootstrap-markdown:
 	trestle author ssp-generate --profile ACME_int_guidance --output ACME_platform_ssp -y assets/extra-ssp-metadata.yml
 
 
-ssp-markdown:
+ssp-markdown: update-markdown
 	trestle author jinja -i acme_platform_ssp.md.jinja -ssp ACME_SSP -p ACME_int_guidance -o acme_platform_ssp.md
-ssp-word:
+ssp-word: ssp-markdown
 	pandoc acme_platform_ssp.md --from markdown+table_captions+implicit_figures+rebase_relative_paths -t docx --reference-doc ssp_word_template.docx -s --toc -o acme_platform_ssp.docx

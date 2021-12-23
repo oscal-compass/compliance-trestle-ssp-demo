@@ -1,9 +1,9 @@
 {
   "catalog": {
-    "uuid": "84152e1c-654a-4971-8035-48b4e62f153c",
+    "uuid": "7d6479cc-01aa-433b-af20-0b856b46ad8f",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2021-12-23T10:16:41.585139+11:00",
+      "last-modified": "2021-12-23T11:31:42.125087+11:00",
       "version": "REPLACE_ME",
       "oscal-version": "1.0.0"
     },
@@ -15,11 +15,25 @@
         "controls": [
           {
             "id": "cc-1",
-            "title": "Energy consumption"
+            "title": "Energy consumption",
+            "parts": [
+              {
+                "id": "cc-1_smt",
+                "name": "statement",
+                "prose": "All services should report energy consumed by their service."
+              }
+            ]
           },
           {
             "id": "cc-2",
-            "title": "Carbon reporting"
+            "title": "Carbon reporting",
+            "parts": [
+              {
+                "id": "cc-2_smt",
+                "name": "statement",
+                "prose": "All services must calculate and report total scope 3 energy consumption."
+              }
+            ]
           }
         ]
       },
@@ -29,7 +43,60 @@
         "controls": [
           {
             "id": "pr-1",
-            "title": "Right to access and deletion of records"
+            "title": "Right to access and deletion of records",
+            "parts": [
+              {
+                "id": "pr-1_smt",
+                "name": "statement",
+                "prose": "Any service or offering MUST:",
+                "parts": [
+                  {
+                    "id": "pr-1_smt.a",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "a"
+                      }
+                    ],
+                    "prose": "Have a privacy focal to respond to deletion requests."
+                  },
+                  {
+                    "id": "pr-1_smt.b",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "b"
+                      }
+                    ],
+                    "prose": "Have an automated method for allowing users to access all of their data"
+                  },
+                  {
+                    "id": "pr-1_smt.c",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "c"
+                      }
+                    ],
+                    "prose": "Have an automated method to allow users to request, and subsequently execute, deletion of personal records."
+                  },
+                  {
+                    "id": "pr-1_smt.d",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "d"
+                      }
+                    ],
+                    "prose": "The process must be documented."
+                  }
+                ]
+              }
+            ]
           },
           {
             "id": "pr-2",

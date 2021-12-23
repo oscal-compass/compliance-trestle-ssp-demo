@@ -72,6 +72,68 @@
         {
           "uuid": "e5848114-138f-46eb-9046-f1fba3a01d8a",
           "control-id": "ac-1",
+          "props": [
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider Corporate"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider System Specific"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service Provider Hybrid (Corporate and System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Configured by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Provided by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Shared (Service Provider and Customer Responsibility)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Partially implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Planned"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Alternative implementation"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Not Applicable"
+            }
+          ],
           "statements": [
             {
               "statement-id": "ac-1_smt.a",
@@ -80,7 +142,7 @@
                 {
                   "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
                   "uuid": "83f683fb-4432-44a0-8350-1598d3dc7273",
-                  "description": "Add control implementation description here for item ac-1_smt.a"
+                  "description": "ACME CISO is responsible for updating documentation on intranet.acme.com/ciso/access-control, on an annual basis. This website becomes the single source of truth for all access-control policies."
                 }
               ]
             },
@@ -100,6 +162,68 @@
         {
           "uuid": "f70d5665-1452-42a0-bed3-485fcdb67046",
           "control-id": "ac-2",
+          "props": [
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider Corporate"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider System Specific"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service Provider Hybrid (Corporate and System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Configured by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Provided by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Shared (Service Provider and Customer Responsibility)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Partially implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Planned"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Alternative implementation"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Not Applicable"
+            }
+          ],
           "statements": [
             {
               "statement-id": "ac-2_smt.a",
@@ -227,6 +351,68 @@
         {
           "uuid": "3d033371-432b-4449-b089-eb43157cc2c5",
           "control-id": "ac-2.1",
+          "props": [
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider Corporate"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider System Specific"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service Provider Hybrid (Corporate and System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Configured by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Provided by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Shared (Service Provider and Customer Responsibility)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Partially implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Planned"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Alternative implementation"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Not Applicable"
+            }
+          ],
           "statements": [
             {
               "statement-id": "ac-2.1_smt",
@@ -244,6 +430,68 @@
         {
           "uuid": "10aa7634-73ec-4eef-9685-92c8d0e6fc57",
           "control-id": "cc-1",
+          "props": [
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider Corporate"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider System Specific"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service Provider Hybrid (Corporate and System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Configured by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Provided by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Shared (Service Provider and Customer Responsibility)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Partially implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Planned"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Alternative implementation"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Not Applicable"
+            }
+          ],
           "statements": [
             {
               "statement-id": "cc-1_smt",
@@ -261,6 +509,68 @@
         {
           "uuid": "185745c1-3fda-43aa-b87f-d978bb41ff61",
           "control-id": "cc-2",
+          "props": [
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider Corporate"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider System Specific"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service Provider Hybrid (Corporate and System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Configured by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Provided by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Shared (Service Provider and Customer Responsibility)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Partially implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Planned"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Alternative implementation"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Not Applicable"
+            }
+          ],
           "statements": [
             {
               "statement-id": "cc-2_smt",
@@ -278,15 +588,110 @@
         {
           "uuid": "50bd8484-5dcc-4d23-8ee4-c115397a2795",
           "control-id": "pr-1",
+          "props": [
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider Corporate"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider System Specific"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service Provider Hybrid (Corporate and System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Configured by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Provided by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Shared (Service Provider and Customer Responsibility)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Partially implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Planned"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Alternative implementation"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Not Applicable"
+            }
+          ],
           "statements": [
             {
-              "statement-id": "pr-1_smt",
-              "uuid": "59dafe6f-61bf-4aa1-a1db-0bc51f6defba",
+              "statement-id": "pr-1_smt.a",
+              "uuid": "1223665a-91ef-49a2-9359-34bb902eba3e",
               "by-components": [
                 {
                   "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "495761f8-ad5a-48e0-b19a-46036558b77c",
-                  "description": "Add control implementation description here for control pr-1"
+                  "uuid": "124a8bf4-49e7-4bc5-ac8b-c6b837249543",
+                  "description": "Add control implementation description here for item pr-1_smt.a"
+                }
+              ]
+            },
+            {
+              "statement-id": "pr-1_smt.b",
+              "uuid": "f827c98b-b804-4f96-9355-b34554ee1840",
+              "by-components": [
+                {
+                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
+                  "uuid": "0dca5f74-acaa-4056-99d3-efef4aa9a453",
+                  "description": "Add control implementation description here for item pr-1_smt.b"
+                }
+              ]
+            },
+            {
+              "statement-id": "pr-1_smt.c",
+              "uuid": "31e3cafe-07dc-4aae-b9f6-4dfc3387f10c",
+              "by-components": [
+                {
+                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
+                  "uuid": "60e1ed17-edf0-4880-a5e3-6425a530e91b",
+                  "description": "Add control implementation description here for item pr-1_smt.c"
+                }
+              ]
+            },
+            {
+              "statement-id": "pr-1_smt.d",
+              "uuid": "0fe51aea-2550-468a-b4b2-5a937d22b529",
+              "by-components": [
+                {
+                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
+                  "uuid": "d1c540e0-8b00-43ff-a4cf-8b96a60eccc6",
+                  "description": "Add control implementation description here for item pr-1_smt.d"
                 }
               ]
             }
@@ -295,6 +700,68 @@
         {
           "uuid": "8db2ca1f-bab8-4109-89ba-2e093e93510a",
           "control-id": "pr-2",
+          "props": [
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider Corporate"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider System Specific"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service Provider Hybrid (Corporate and System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Configured by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Provided by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Shared (Service Provider and Customer Responsibility)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Partially implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Planned"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Alternative implementation"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Not Applicable"
+            }
+          ],
           "statements": [
             {
               "statement-id": "pr-2_smt",
@@ -312,6 +779,68 @@
         {
           "uuid": "83f3d46c-3705-49ff-9b95-d0f958c195b5",
           "control-id": "sc-1",
+          "props": [
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider Corporate"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider System Specific"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service Provider Hybrid (Corporate and System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Configured by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Provided by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Shared (Service Provider and Customer Responsibility)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Partially implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Planned"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Alternative implementation"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Not Applicable"
+            }
+          ],
           "statements": [
             {
               "statement-id": "sc-1_smt.a",
@@ -340,6 +869,68 @@
         {
           "uuid": "51c39289-a281-4296-b196-6bff8483599f",
           "control-id": "sc-2",
+          "props": [
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider Corporate"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider System Specific"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service Provider Hybrid (Corporate and System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Configured by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Provided by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Shared (Service Provider and Customer Responsibility)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Partially implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Planned"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Alternative implementation"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Not Applicable"
+            }
+          ],
           "statements": [
             {
               "statement-id": "sc-2_smt",

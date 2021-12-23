@@ -13,6 +13,8 @@ reviewed-by:
 
 ## Control Statement
 
+All services must calculate and report total scope 3 energy consumption.
+
 # Editable Content
 
 <!-- Make additions and edits below -->

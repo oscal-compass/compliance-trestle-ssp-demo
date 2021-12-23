@@ -7,6 +7,23 @@ x-trestle-dependent-on:
 reviewed-by:
   - named:
     date:
+x-trestle-fedramp-props:
+  control-origination:
+    - Service provider Corporate
+    - Service provider System Specific
+    - Service Provider Hybrid (Corporate and System Specific)
+    - Configured by Customer (Customer System Specific)
+    - Provided by Customer (Customer System Specific)
+    - Shared (Service Provider and Customer Responsibility)
+    - Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of
+      Authorization
+  implementation-status:
+    - Implemented
+    - Partially implemented
+    - Planned
+    - Alternative implementation
+    - Not Applicable
+  responsible-roles:
 ---
 
 # ac-1 - \[Access Control\] Access Control Policy and Procedures
@@ -78,7 +95,7 @@ ______________________________________________________________________
 
 ## Implementation a.
 
-Add control implementation description here for item ac-1_smt.a
+ACME CISO is responsible for updating documentation on intranet.acme.com/ciso/access-control, on an annual basis. This website becomes the single source of truth for all access-control policies.
 
 ______________________________________________________________________
 

@@ -2,6 +2,8 @@
 
 ## Control Statement
 
+All services should report energy consumed by their service.
+
 # Editable Content
 
 <!-- Make additions and edits below -->

@@ -40,11 +40,39 @@ The organization:
 | ac-1_prm_2 | organization-defined frequency |
 | ac-1_prm_3 | organization-defined frequency |
 
+##### FedRamp Implementation Status.
+
+- Implemented
+
+- Partially implemented
+
+- Planned
+
+- Alternative implementation
+
+- Not Applicable
+
+##### FedRamp Control Origination.
+
+- Service provider Corporate
+
+- Service provider System Specific
+
+- Service Provider Hybrid (Corporate and System Specific)
+
+- Configured by Customer (Customer System Specific)
+
+- Provided by Customer (Customer System Specific)
+
+- Shared (Service Provider and Customer Responsibility)
+
+- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
+
 #### What is the solution and how is it implemented?
 
 ##### Part a.
 
-Add control implementation description here for item ac-1_smt.a
+ACME CISO is responsible for updating documentation on intranet.acme.com/ciso/access-control, on an annual basis. This website becomes the single source of truth for all access-control policies.
 
 ##### Part b.
 
@@ -97,6 +125,34 @@ The organization:
 | ac-2_prm_2 | organization-defined personnel or roles |
 | ac-2_prm_3 | organization-defined procedures or conditions |
 | ac-2_prm_4 | organization-defined frequency |
+
+##### FedRamp Implementation Status.
+
+- Implemented
+
+- Partially implemented
+
+- Planned
+
+- Alternative implementation
+
+- Not Applicable
+
+##### FedRamp Control Origination.
+
+- Service provider Corporate
+
+- Service provider System Specific
+
+- Service Provider Hybrid (Corporate and System Specific)
+
+- Configured by Customer (Customer System Specific)
+
+- Provided by Customer (Customer System Specific)
+
+- Shared (Service Provider and Customer Responsibility)
+
+- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
 
 #### What is the solution and how is it implemented?
 
@@ -155,6 +211,34 @@ The organization employs automated mechanisms to support the management of infor
 #### AC-2(1) Summary information
 
 
+##### FedRamp Implementation Status.
+
+- Implemented
+
+- Partially implemented
+
+- Planned
+
+- Alternative implementation
+
+- Not Applicable
+
+##### FedRamp Control Origination.
+
+- Service provider Corporate
+
+- Service provider System Specific
+
+- Service Provider Hybrid (Corporate and System Specific)
+
+- Configured by Customer (Customer System Specific)
+
+- Provided by Customer (Customer System Specific)
+
+- Shared (Service Provider and Customer Responsibility)
+
+- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
+
 #### What is the solution and how is it implemented?
 
 Add control implementation description here for control ac-2.1
@@ -189,6 +273,34 @@ The organization:
 | sc-1_prm_2 | organization-defined frequency |
 | sc-1_prm_3 | organization-defined frequency |
 
+##### FedRamp Implementation Status.
+
+- Implemented
+
+- Partially implemented
+
+- Planned
+
+- Alternative implementation
+
+- Not Applicable
+
+##### FedRamp Control Origination.
+
+- Service provider Corporate
+
+- Service provider System Specific
+
+- Service Provider Hybrid (Corporate and System Specific)
+
+- Configured by Customer (Customer System Specific)
+
+- Provided by Customer (Customer System Specific)
+
+- Shared (Service Provider and Customer Responsibility)
+
+- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
+
 #### What is the solution and how is it implemented?
 
 ##### Part a.
@@ -210,6 +322,34 @@ The information system separates user functionality (including user interface se
 #### SC-2 Summary information
 
 
+##### FedRamp Implementation Status.
+
+- Implemented
+
+- Partially implemented
+
+- Planned
+
+- Alternative implementation
+
+- Not Applicable
+
+##### FedRamp Control Origination.
+
+- Service provider Corporate
+
+- Service provider System Specific
+
+- Service Provider Hybrid (Corporate and System Specific)
+
+- Configured by Customer (Customer System Specific)
+
+- Provided by Customer (Customer System Specific)
+
+- Shared (Service Provider and Customer Responsibility)
+
+- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
+
 #### What is the solution and how is it implemented?
 
 Add control implementation description here for control sc-2
@@ -221,10 +361,40 @@ Add control implementation description here for control sc-2
 
 #### Control Statement
 
+All services should report energy consumed by their service.
+
 
 
 ####  Summary information
 
+
+##### FedRamp Implementation Status.
+
+- Implemented
+
+- Partially implemented
+
+- Planned
+
+- Alternative implementation
+
+- Not Applicable
+
+##### FedRamp Control Origination.
+
+- Service provider Corporate
+
+- Service provider System Specific
+
+- Service Provider Hybrid (Corporate and System Specific)
+
+- Configured by Customer (Customer System Specific)
+
+- Provided by Customer (Customer System Specific)
+
+- Shared (Service Provider and Customer Responsibility)
+
+- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
 
 #### What is the solution and how is it implemented?
 
@@ -234,10 +404,40 @@ Add control implementation description here for control cc-1
 
 #### Control Statement
 
+All services must calculate and report total scope 3 energy consumption.
+
 
 
 ####  Summary information
 
+
+##### FedRamp Implementation Status.
+
+- Implemented
+
+- Partially implemented
+
+- Planned
+
+- Alternative implementation
+
+- Not Applicable
+
+##### FedRamp Control Origination.
+
+- Service provider Corporate
+
+- Service provider System Specific
+
+- Service Provider Hybrid (Corporate and System Specific)
+
+- Configured by Customer (Customer System Specific)
+
+- Provided by Customer (Customer System Specific)
+
+- Shared (Service Provider and Customer Responsibility)
+
+- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
 
 #### What is the solution and how is it implemented?
 
@@ -250,14 +450,66 @@ Add control implementation description here for control cc-2
 
 #### Control Statement
 
+Any service or offering MUST:
+
+- \[a\] Have a privacy focal to respond to deletion requests.
+
+- \[b\] Have an automated method for allowing users to access all of their data
+
+- \[c\] Have an automated method to allow users to request, and subsequently execute, deletion of personal records.
+
+- \[d\] The process must be documented.
+
 
 
 ####  Summary information
 
 
+##### FedRamp Implementation Status.
+
+- Implemented
+
+- Partially implemented
+
+- Planned
+
+- Alternative implementation
+
+- Not Applicable
+
+##### FedRamp Control Origination.
+
+- Service provider Corporate
+
+- Service provider System Specific
+
+- Service Provider Hybrid (Corporate and System Specific)
+
+- Configured by Customer (Customer System Specific)
+
+- Provided by Customer (Customer System Specific)
+
+- Shared (Service Provider and Customer Responsibility)
+
+- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
+
 #### What is the solution and how is it implemented?
 
-Add control implementation description here for control pr-1
+##### Part a
+
+Add control implementation description here for item pr-1_smt.a
+
+##### Part b
+
+Add control implementation description here for item pr-1_smt.b
+
+##### Part c
+
+Add control implementation description here for item pr-1_smt.c
+
+##### Part d
+
+Add control implementation description here for item pr-1_smt.d
 
 ### PR-2 - Registering exemptions to right to delete
 
@@ -267,6 +519,34 @@ Add control implementation description here for control pr-1
 
 ####  Summary information
 
+
+##### FedRamp Implementation Status.
+
+- Implemented
+
+- Partially implemented
+
+- Planned
+
+- Alternative implementation
+
+- Not Applicable
+
+##### FedRamp Control Origination.
+
+- Service provider Corporate
+
+- Service provider System Specific
+
+- Service Provider Hybrid (Corporate and System Specific)
+
+- Configured by Customer (Customer System Specific)
+
+- Provided by Customer (Customer System Specific)
+
+- Shared (Service Provider and Customer Responsibility)
+
+- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
 
 #### What is the solution and how is it implemented?
 

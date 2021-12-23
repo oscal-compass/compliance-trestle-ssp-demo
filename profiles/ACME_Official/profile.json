@@ -35,7 +35,24 @@
       "as-is": true
     },
     "modify": {
-      "alters": []
+      "alters": [
+        {
+          "control-id": "ac-1",
+          "adds": [
+            {
+              "position": "after",
+              "by-id": "ac-1_smt",
+              "parts": [
+                {
+                  "id": "ac-1_acme_guidance",
+                  "name": "acme_guidance",
+                  "prose": "Access control documentation should be at one centrally managed intranet site that is consistent across the corporation. Website should be indexed in intranet search engine."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }

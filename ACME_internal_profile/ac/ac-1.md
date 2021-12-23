@@ -81,6 +81,10 @@ Determine if the organization:
     - \[1\] defines the frequency to review and update the current access control procedures; and
     - \[2\] reviews and updates the current access control procedures with the organization-defined frequency.
 
+## Control acme_guidance
+
+Access control documentation should be at one centrally managed intranet site that is consistent across the corporation. Website should be indexed in intranet search engine.
+
 ## Control guidance
 
 This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the AC family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures.

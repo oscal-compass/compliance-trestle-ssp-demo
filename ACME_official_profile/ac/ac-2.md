@@ -7,6 +7,11 @@ x-trestle-dependent-on:
 reviewed-by:
   - named:
     date:
+x-trestle-set-params:
+  ac-2_prm_1: organization-defined information system account types
+  ac-2_prm_2: organization-defined personnel or roles
+  ac-2_prm_3: organization-defined procedures or conditions
+  ac-2_prm_4: organization-defined frequency
 ---
 
 # ac-2 - \[Access Control\] Account Management

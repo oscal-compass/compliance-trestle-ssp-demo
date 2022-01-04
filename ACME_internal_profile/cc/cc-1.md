@@ -26,7 +26,7 @@ x-trestle-fedramp-props:
   responsible-roles:
 ---
 
-# cc-1 - \[\] Energy consumption
+# cc-1 - \[Custom Controls\] Energy consumption
 
 ## Control Statement
 

@@ -7,6 +7,10 @@ x-trestle-dependent-on:
 reviewed-by:
   - named:
     date:
+x-trestle-set-params:
+  ac-1_prm_1: organization-defined personnel or roles
+  ac-1_prm_2: organization-defined frequency
+  ac-1_prm_3: organization-defined frequency
 ---
 
 # ac-1 - \[Access Control\] Access Control Policy and Procedures

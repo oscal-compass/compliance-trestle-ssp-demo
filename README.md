@@ -5,7 +5,7 @@
 This repository illustrates how to use `trestle author` functionality to make OSCAL more approachable. 
 Specifically it shows how some tasks, such as writing corporate guidance, SSP control implementation descriptions and setting of parameters can be simplified using a markdown workflow.
 
-Markdown was specifically chosen as OSCAL leverages markdown as it's markup language in prose fields (for `json` and `yaml` formats only).
+Markdown was specifically chosen as OSCAL leverages markdown as its markup language in prose fields (for `json` and `yaml` formats only).
 
 This repo is anchored around 'ACME Inc.' based on the description below. As additional capabilities are created in the core of trestle this repository will be expanded.
 
@@ -23,7 +23,7 @@ ACME is planning on FedRAMP, however, this is not part of the current scope.
 
 
 ## Using the demo
-The demo has been pre-configured with an set of interlocking catalogs, profiles, and SSPs.
+The demo has been pre-configured with a set of interlocking catalogs, profiles, and SSPs.
 
 ![Information flow](docs/information_flow.png)
 
@@ -68,7 +68,3 @@ A sync between the OSCAL and markdown equaivalents can be triggered by running `
   - The net result: keep any markdown includes in the same folder as the output of `trestle author jinja`
 - Magic data:
   - `x-trestle-fedramp` props are magic data at the moment with trestle, and must come from the `-y` argument.
-- Bugs:
-  - https://github.com/IBM/compliance-trestle/issues/966
-  - https://github.com/IBM/compliance-trestle/issues/967
-  - https://github.com/IBM/compliance-trestle/issues/968

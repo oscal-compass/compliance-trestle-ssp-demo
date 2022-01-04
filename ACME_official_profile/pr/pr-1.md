@@ -9,7 +9,7 @@ reviewed-by:
     date:
 ---
 
-# pr-1 - \[\] Right to access and deletion of records
+# pr-1 - \[Privilege Rating\] Right to access and deletion of records
 
 ## Control Statement
 

@@ -7,6 +7,10 @@ x-trestle-dependent-on:
 reviewed-by:
   - named:
     date:
+x-trestle-set-params:
+  sc-1_prm_1: organization-defined personnel or roles
+  sc-1_prm_2: organization-defined frequency
+  sc-1_prm_3: organization-defined frequency
 ---
 
 # sc-1 - \[System and Communications Protection\] System and Communications Protection Policy and Procedures

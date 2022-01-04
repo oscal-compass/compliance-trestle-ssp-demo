@@ -9,7 +9,7 @@ reviewed-by:
     date:
 ---
 
-# pr-2 - \[\] Registering exemptions to right to delete
+# pr-2 - \[Privilege Rating\] Registering exemptions to right to delete
 
 ## Control Statement
 

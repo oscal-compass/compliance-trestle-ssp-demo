@@ -1,9 +1,9 @@
 {
   "catalog": {
-    "uuid": "480fd9c6-cb05-4a63-aceb-04f79a6a5bc0",
+    "uuid": "4e93be7b-8e35-443d-85ae-61b58fa3ef5f",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2021-12-23T14:08:56.343543+11:00",
+      "last-modified": "2022-01-04T17:57:58.934280+11:00",
       "version": "REPLACE_ME",
       "oscal-version": "1.0.0"
     },
@@ -11,7 +11,7 @@
     "groups": [
       {
         "id": "cc",
-        "title": "",
+        "title": "Custom Controls",
         "controls": [
           {
             "id": "cc-1",
@@ -39,7 +39,7 @@
       },
       {
         "id": "pr",
-        "title": "",
+        "title": "Privilege Rating",
         "controls": [
           {
             "id": "pr-1",

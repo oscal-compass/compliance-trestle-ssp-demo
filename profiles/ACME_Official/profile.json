@@ -35,6 +35,68 @@
       "as-is": true
     },
     "modify": {
+      "set-parameters": [
+        {
+          "param-id": "ac-1_prm_1",
+          "values": [
+            "organization-defined personnel or roles"
+          ]
+        },
+        {
+          "param-id": "ac-1_prm_2",
+          "values": [
+            "organization-defined frequency"
+          ]
+        },
+        {
+          "param-id": "ac-1_prm_3",
+          "values": [
+            "organization-defined frequency"
+          ]
+        },
+        {
+          "param-id": "ac-2_prm_1",
+          "values": [
+            "organization-defined information system account types"
+          ]
+        },
+        {
+          "param-id": "ac-2_prm_2",
+          "values": [
+            "organization-defined personnel or roles"
+          ]
+        },
+        {
+          "param-id": "ac-2_prm_3",
+          "values": [
+            "organization-defined procedures or conditions"
+          ]
+        },
+        {
+          "param-id": "ac-2_prm_4",
+          "values": [
+            "organization-defined frequency"
+          ]
+        },
+        {
+          "param-id": "sc-1_prm_1",
+          "values": [
+            "organization-defined personnel or roles"
+          ]
+        },
+        {
+          "param-id": "sc-1_prm_2",
+          "values": [
+            "organization-defined frequency"
+          ]
+        },
+        {
+          "param-id": "sc-1_prm_3",
+          "values": [
+            "organization-defined frequency"
+          ]
+        }
+      ],
       "alters": [
         {
           "control-id": "ac-1",

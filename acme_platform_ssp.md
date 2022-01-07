@@ -354,7 +354,7 @@ The information system separates user functionality (including user interface se
 
 Add control implementation description here for control sc-2
 
-##   \(CC\)
+## Custom Controls  \(CC\)
 
 
 ### CC-1 - Energy consumption
@@ -443,7 +443,7 @@ All services must calculate and report total scope 3 energy consumption.
 
 Add control implementation description here for control cc-2
 
-##   \(PR\)
+## Privilege Rating  \(PR\)
 
 
 ### PR-1 - Right to access and deletion of records

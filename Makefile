@@ -20,8 +20,8 @@ update-markdown: update-oscal
 
 update-oscal:
 	trestle author catalog-assemble -m ACME_custom_controls -o ACME_custom
-	trestle author profile-assemble -m ACME_official_profile -o ACME_Official -n ACME_Official --set-parameters
-	trestle author profile-assemble -m ACME_internal_profile -o ACME_int_guidance -n ACME_int_guidance
+	trestle author profile-assemble -m ACME_official_profile -o ACME_Official --set-parameters
+	trestle author profile-assemble -m ACME_internal_profile -o ACME_int_guidance
 	trestle author ssp-assemble -m ACME_platform_ssp -o ACME_SSP
 
 bootstrap-markdown:

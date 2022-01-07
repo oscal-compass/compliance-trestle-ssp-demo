@@ -9,7 +9,7 @@ reviewed-by:
     date:
 ---
 
-# cc-2 - \[\] Carbon reporting
+# cc-2 - \[Custom Controls\] Carbon reporting
 
 ## Control Statement
 

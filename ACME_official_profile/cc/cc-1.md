@@ -9,7 +9,7 @@ reviewed-by:
     date:
 ---
 
-# cc-1 - \[\] Energy consumption
+# cc-1 - \[Custom Controls\] Energy consumption
 
 ## Control Statement
 

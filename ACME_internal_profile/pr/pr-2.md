@@ -35,7 +35,8 @@ x-trestle-fedramp-props:
 <!-- Make additions and edits below -->
 <!-- The above represents the contents of the control as received by the profile, prior to additions. -->
 <!-- If the profile makes additions to the control, they will appear below. -->
-<!-- The above may not be edited but you may edit the content below, and/or introduce new additions to be made by the profile. -->
+<!-- The above markdown may not be edited but you may edit the content below, and/or introduce new additions to be made by the profile. -->
+<!-- If there is a yaml header at the top, parameter values may be edited. Use --set-parameters to incorporate the changes during assembly. -->
 <!-- The content here will then replace what is in the profile for this control, after running profile-assemble. -->
 <!-- The current profile has no added parts for this control, but you may add new ones here. -->
 <!-- Each addition must have a heading of the form ## Control my_addition_name -->

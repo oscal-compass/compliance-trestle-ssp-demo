@@ -24,6 +24,7 @@ x-trestle-fedramp-props:
     - Alternative implementation
     - Not Applicable
   responsible-roles:
+sort-id: ac-02
 ---
 
 # ac-2 - \[Access Control\] Account Management
@@ -32,99 +33,99 @@ x-trestle-fedramp-props:
 
 The organization:
 
-- \[a\] Identifies and selects the following types of information system accounts to support organizational missions/business functions: organization-defined information system account types;
+- \[a.\] Identifies and selects the following types of information system accounts to support organizational missions/business functions: privileged;
 
-- \[b\] Assigns account managers for information system accounts;
+- \[b.\] Assigns account managers for information system accounts;
 
-- \[c\] Establishes conditions for group and role membership;
+- \[c.\] Establishes conditions for group and role membership;
 
-- \[d\] Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;
+- \[d.\] Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;
 
-- \[e\] Requires approvals by organization-defined personnel or roles for requests to create information system accounts;
+- \[e.\] Requires approvals by officer for requests to create information system accounts;
 
-- \[f\] Creates, enables, modifies, disables, and removes information system accounts in accordance with organization-defined procedures or conditions;
+- \[f.\] Creates, enables, modifies, disables, and removes information system accounts in accordance with standard operations;
 
-- \[g\] Monitors the use of information system accounts;
+- \[g.\] Monitors the use of information system accounts;
 
-- \[h\] Notifies account managers:
+- \[h.\] Notifies account managers:
 
-  - \[1\] When accounts are no longer required;
-  - \[2\] When users are terminated or transferred; and
-  - \[3\] When individual information system usage or need-to-know changes;
+  - \[1.\] When accounts are no longer required;
+  - \[2.\] When users are terminated or transferred; and
+  - \[3.\] When individual information system usage or need-to-know changes;
 
-- \[i\] Authorizes access to the information system based on:
+- \[i.\] Authorizes access to the information system based on:
 
-  - \[1\] A valid access authorization;
-  - \[2\] Intended system usage; and
-  - \[3\] Other attributes as required by the organization or associated missions/business functions;
+  - \[1.\] A valid access authorization;
+  - \[2.\] Intended system usage; and
+  - \[3.\] Other attributes as required by the organization or associated missions/business functions;
 
-- \[j\] Reviews accounts for compliance with account management requirements organization-defined frequency; and
+- \[j.\] Reviews accounts for compliance with account management requirements daily; and
 
-- \[k\] Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
+- \[k.\] Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
 
 ## Control Objective
 
 Determine if the organization:
 
-- \[a_obj\]
+- \[AC-2(a)\]
 
-  - \[1\] defines information system account types to be identified and selected to support organizational missions/business functions;
-  - \[2\] identifies and selects organization-defined information system account types to support organizational missions/business functions;
+  - \[AC-2(a)[1]\] defines information system account types to be identified and selected to support organizational missions/business functions;
+  - \[AC-2(a)[2]\] identifies and selects organization-defined information system account types to support organizational missions/business functions;
 
-- \[b_obj\] assigns account managers for information system accounts;
+- \[AC-2(b)\] assigns account managers for information system accounts;
 
-- \[c_obj\] establishes conditions for group and role membership;
+- \[AC-2(c)\] establishes conditions for group and role membership;
 
-- \[d_obj\] specifies for each account (as required):
+- \[AC-2(d)\] specifies for each account (as required):
 
-  - \[1\] authorized users of the information system;
-  - \[2\] group and role membership;
-  - \[3\] access authorizations (i.e., privileges);
-  - \[4\] other attributes;
+  - \[AC-2(d)[1]\] authorized users of the information system;
+  - \[AC-2(d)[2]\] group and role membership;
+  - \[AC-2(d)[3]\] access authorizations (i.e., privileges);
+  - \[AC-2(d)[4]\] other attributes;
 
-- \[e_obj\]
+- \[AC-2(e)\]
 
-  - \[1\] defines personnel or roles required to approve requests to create information system accounts;
-  - \[2\] requires approvals by organization-defined personnel or roles for requests to create information system accounts;
+  - \[AC-2(e)[1]\] defines personnel or roles required to approve requests to create information system accounts;
+  - \[AC-2(e)[2]\] requires approvals by organization-defined personnel or roles for requests to create information system accounts;
 
-- \[f_obj\]
+- \[AC-2(f)\]
 
-  - \[1\] defines procedures or conditions to:
+  - \[AC-2(f)[1]\] defines procedures or conditions to:
 
-    - \[a\] create information system accounts;
-    - \[b\] enable information system accounts;
-    - \[c\] modify information system accounts;
-    - \[d\] disable information system accounts;
-    - \[e\] remove information system accounts;
+    - \[AC-2(f)[1][a]\] create information system accounts;
+    - \[AC-2(f)[1][b]\] enable information system accounts;
+    - \[AC-2(f)[1][c]\] modify information system accounts;
+    - \[AC-2(f)[1][d]\] disable information system accounts;
+    - \[AC-2(f)[1][e]\] remove information system accounts;
 
-  - \[2\] in accordance with organization-defined procedures or conditions:
+  - \[AC-2(f)[2]\] in accordance with organization-defined procedures or conditions:
 
-    - \[a\] creates information system accounts;
-    - \[b\] enables information system accounts;
-    - \[c\] modifies information system accounts;
-    - \[d\] disables information system accounts;
-    - \[e\] removes information system accounts;
+    - \[AC-2(f)[2][a]\] creates information system accounts;
+    - \[AC-2(f)[2][b]\] enables information system accounts;
+    - \[AC-2(f)[2][c]\] modifies information system accounts;
+    - \[AC-2(f)[2][d]\] disables information system accounts;
+    - \[AC-2(f)[2][e]\] removes information system accounts;
 
-- \[g_obj\] monitors the use of information system accounts;
+- \[AC-2(g)\] monitors the use of information system accounts;
 
-- \[h_obj\] notifies account managers:
+- \[AC-2(h)\] notifies account managers:
 
-  - \[1_obj\] when accounts are no longer required;
-  - \[2_obj\] when users are terminated or transferred;
-  - \[3_obj\] when individual information system usage or need to know changes;
+  - \[AC-2(h)(1)\] when accounts are no longer required;
+  - \[AC-2(h)(2)\] when users are terminated or transferred;
+  - \[AC-2(h)(3)\] when individual information system usage or need to know changes;
 
-- \[i_obj\] authorizes access to the information system based on;
+- \[AC-2(i)\] authorizes access to the information system based on;
 
-  - \[1_obj\] a valid access authorization;
-  - \[2_obj\] intended system usage;
-  - \[3_obj\] other attributes as required by the organization or associated missions/business functions;
+  - \[AC-2(i)(1)\] a valid access authorization;
+  - \[AC-2(i)(2)\] intended system usage;
+  - \[AC-2(i)(3)\] other attributes as required by the organization or associated missions/business functions;
 
-- \[j_obj\]
+- \[AC-2(j)\]
 
-  - \[1\] defines the frequency to review accounts for compliance with account management requirements;
-  - \[2\] reviews accounts for compliance with account management requirements with the organization-defined frequency; and
+  - \[AC-2(j)[1]\] defines the frequency to review accounts for compliance with account management requirements;
+  - \[AC-2(j)[2]\] reviews accounts for compliance with account management requirements with the organization-defined frequency; and
 
-- \[k_obj\] establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
+- \[AC-2(k)\] establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
 
 ## Control guidance
 

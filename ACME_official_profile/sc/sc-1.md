@@ -8,9 +8,19 @@ reviewed-by:
   - named:
     date:
 x-trestle-set-params:
-  sc-1_prm_1: organization-defined personnel or roles
-  sc-1_prm_2: organization-defined frequency
-  sc-1_prm_3: organization-defined frequency
+  sc-1_prm_1:
+    profile-values: assistants
+    values:
+    label: organization-defined personnel or roles
+  sc-1_prm_2:
+    profile-values: hourly
+    values:
+    label: organization-defined frequency
+  sc-1_prm_3:
+    profile-values: bi-monthly
+    values:
+    label: organization-defined frequency
+sort-id: sc-01
 ---
 
 # sc-1 - \[System and Communications Protection\] System and Communications Protection Policy and Procedures
@@ -19,54 +29,54 @@ x-trestle-set-params:
 
 The organization:
 
-- \[a\] Develops, documents, and disseminates to organization-defined personnel or roles:
+- \[a.\] Develops, documents, and disseminates to {{ insert: param, sc-1_prm_1 }}:
 
-  - \[1\] A system and communications protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
-  - \[2\] Procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls; and
+  - \[1.\] A system and communications protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+  - \[2.\] Procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls; and
 
-- \[b\] Reviews and updates the current:
+- \[b.\] Reviews and updates the current:
 
-  - \[1\] System and communications protection policy organization-defined frequency; and
-  - \[2\] System and communications protection procedures organization-defined frequency.
+  - \[1.\] System and communications protection policy {{ insert: param, sc-1_prm_2 }}; and
+  - \[2.\] System and communications protection procedures {{ insert: param, sc-1_prm_3 }}.
 
 ## Control Objective
 
 Determine if the organization:
 
-- \[a_obj\]
+- \[SC-1(a)\]
 
-  - \[1_obj\]
+  - \[SC-1(a)(1)\]
 
-    - \[1\] develops and documents a system and communications protection policy that addresses:
+    - \[SC-1(a)(1)[1]\] develops and documents a system and communications protection policy that addresses:
 
-      - \[a\] purpose;
-      - \[b\] scope;
-      - \[c\] roles;
-      - \[d\] responsibilities;
-      - \[e\] management commitment;
-      - \[f\] coordination among organizational entities;
-      - \[g\] compliance;
+      - \[SC-1(a)(1)[1][a]\] purpose;
+      - \[SC-1(a)(1)[1][b]\] scope;
+      - \[SC-1(a)(1)[1][c]\] roles;
+      - \[SC-1(a)(1)[1][d]\] responsibilities;
+      - \[SC-1(a)(1)[1][e]\] management commitment;
+      - \[SC-1(a)(1)[1][f]\] coordination among organizational entities;
+      - \[SC-1(a)(1)[1][g]\] compliance;
 
-    - \[2\] defines personnel or roles to whom the system and communications protection policy is to be disseminated;
-    - \[3\] disseminates the system and communications protection policy to organization-defined personnel or roles;
+    - \[SC-1(a)(1)[2]\] defines personnel or roles to whom the system and communications protection policy is to be disseminated;
+    - \[SC-1(a)(1)[3]\] disseminates the system and communications protection policy to organization-defined personnel or roles;
 
-  - \[2_obj\]
+  - \[SC-1(a)(2)\]
 
-    - \[1\] develops and documents procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls;
-    - \[2\] defines personnel or roles to whom the procedures are to be disseminated;
-    - \[3\] disseminates the procedures to organization-defined personnel or roles;
+    - \[SC-1(a)(2)[1]\] develops and documents procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls;
+    - \[SC-1(a)(2)[2]\] defines personnel or roles to whom the procedures are to be disseminated;
+    - \[SC-1(a)(2)[3]\] disseminates the procedures to organization-defined personnel or roles;
 
-- \[b_obj\]
+- \[SC-1(b)\]
 
-  - \[1_obj\]
+  - \[SC-1(b)(1)\]
 
-    - \[1\] defines the frequency to review and update the current system and communications protection policy;
-    - \[2\] reviews and updates the current system and communications protection policy with the organization-defined frequency;
+    - \[SC-1(b)(1)[1]\] defines the frequency to review and update the current system and communications protection policy;
+    - \[SC-1(b)(1)[2]\] reviews and updates the current system and communications protection policy with the organization-defined frequency;
 
-  - \[2_obj\]
+  - \[SC-1(b)(2)\]
 
-    - \[1\] defines the frequency to review and update the current system and communications protection procedures; and
-    - \[2\] reviews and updates the current system and communications protection procedures with the organization-defined frequency.
+    - \[SC-1(b)(2)[1]\] defines the frequency to review and update the current system and communications protection procedures; and
+    - \[SC-1(b)(2)[2]\] reviews and updates the current system and communications protection procedures with the organization-defined frequency.
 
 ## Control guidance
 
@@ -77,7 +87,8 @@ This control addresses the establishment of policy and procedures for the effect
 <!-- Make additions and edits below -->
 <!-- The above represents the contents of the control as received by the profile, prior to additions. -->
 <!-- If the profile makes additions to the control, they will appear below. -->
-<!-- The above may not be edited but you may edit the content below, and/or introduce new additions to be made by the profile. -->
+<!-- The above markdown may not be edited but you may edit the content below, and/or introduce new additions to be made by the profile. -->
+<!-- If there is a yaml header at the top, parameter values may be edited. Use --set-parameters to incorporate the changes during assembly. -->
 <!-- The content here will then replace what is in the profile for this control, after running profile-assemble. -->
 <!-- The current profile has no added parts for this control, but you may add new ones here. -->
 <!-- Each addition must have a heading of the form ## Control my_addition_name -->

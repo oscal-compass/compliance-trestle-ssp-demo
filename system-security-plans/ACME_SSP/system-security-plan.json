@@ -3,7 +3,7 @@
     "uuid": "df053186-52e3-48cd-bdda-ed52216aa064",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2021-12-22T15:56:29.690495+11:00",
+      "last-modified": "2022-03-23T15:25:39.221843+11:00",
       "version": "REPLACE_ME",
       "oscal-version": "1.0.0"
     },
@@ -142,7 +142,7 @@
                 {
                   "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
                   "uuid": "83f683fb-4432-44a0-8350-1598d3dc7273",
-                  "description": "ACME CISO is responsible for updating documentation on intranet.acme.com/ciso/access-control, on an annual basis. This website becomes the single source of truth for all access-control policies."
+                  "description": "Add control implementation description here for item ac-1_smt.a"
                 }
               ]
             },

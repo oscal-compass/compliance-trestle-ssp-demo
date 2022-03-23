@@ -57,7 +57,7 @@ A sync between the OSCAL and markdown equaivalents can be triggered by running `
 - Editing additional metadata.
 
 ## Running this demo locally:
-- Trestle version 0.33.1 and above is required.
+- Trestle version 1.0.0 and above is required.
 - Users will need to [install pandoc](https://pandoc.org/installing.html). Known to work above version `2.16.2`
 
 

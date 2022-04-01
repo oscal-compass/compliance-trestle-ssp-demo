@@ -9,17 +9,17 @@ reviewed-by:
     date:
 x-trestle-set-params:
   sc-1_prm_1:
+    label: organization-defined personnel or roles
     profile-values: assistants
     values:
-    label: organization-defined personnel or roles
   sc-1_prm_2:
+    label: organization-defined frequency
     profile-values: hourly
     values:
-    label: organization-defined frequency
   sc-1_prm_3:
+    label: organization-defined frequency
     profile-values: bi-monthly
     values:
-    label: organization-defined frequency
 sort-id: sc-01
 ---
 

@@ -3,10 +3,11 @@
     "uuid": "9152e482-48fa-4a00-a1c9-2df5d990af20",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2022-03-23T17:20:17.442318+11:00",
+      "last-modified": "2022-03-31T17:20:52.657686+11:00",
       "version": "REPLACE_ME",
       "oscal-version": "1.0.0"
     },
+    "params": [],
     "controls": [],
     "groups": [
       {

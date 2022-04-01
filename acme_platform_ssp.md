@@ -1,12 +1,24 @@
 ACME  Platform SSP
 
-
 # ACME Platform overview
+This is the frontmatter for the ACME System Security Plan
 
+<!-- This iterates over the controls in a resolved catalog and prints out the control statement, summary table,
+and implemented requirements in a format similar to a FedRAMP .docx
 
+The groups are sorted by id and the controls are sorted within each group by sort-id if defined for the control.
 
+The control tables for parameters are output with the param_id in the first column followed either by a single
+'Values' column, or two columns: 'Values' and 'Label or Choice'.  In the one-column case, values are listed if available
+and if not the descriptive label is shown, unless the parameter has a Select defined, in which case the choice options
+are shown.
 
+In the two-column case the Values column is empty if no values are defined, and the Label or Choice column is either the
+list of optional choices if the parameter has a Select defined, else just the descriptive label for the parameter.
 
+To choose the one- or two- column option, specify false or true, respectively, as the final parameter in
+get_fedramp_control_tables().
+-->
 
 # Control responses and guidance
 
@@ -30,15 +42,14 @@ The organization:
   - \[2.\] Access control procedures weekly.
 
 
-
 #### AC-1 Summary information
 
 
-| Parameter ID | Value |
-|---|---|
-| ac-1_prm_1 | executives |
-| ac-1_prm_2 | monthly |
-| ac-1_prm_3 | weekly |
+| Parameter ID | Values | Label or Choices |
+|---|---|---|
+| ac-1_prm_1 | executives | organization-defined personnel or roles |
+| ac-1_prm_2 | monthly | organization-defined frequency |
+| ac-1_prm_3 | weekly | organization-defined frequency |
 
 ##### FedRamp Implementation Status.
 
@@ -92,7 +103,7 @@ The organization:
 
 - \[d.\] Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;
 
-- \[e.\] Requires approvals by officer for requests to create information system accounts;
+- \[e.\] Requires approvals by ACME interal method for requests to create information system accounts;
 
 - \[f.\] Creates, enables, modifies, disables, and removes information system accounts in accordance with standard operations;
 
@@ -115,16 +126,15 @@ The organization:
 - \[k.\] Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
 
 
-
 #### AC-2 Summary information
 
 
-| Parameter ID | Value |
-|---|---|
-| ac-2_prm_1 | privileged |
-| ac-2_prm_2 | officer |
-| ac-2_prm_3 | standard operations |
-| ac-2_prm_4 | daily |
+| Parameter ID | Values | Label or Choices |
+|---|---|---|
+| ac-2_prm_1 | privileged | organization-defined information system account types |
+| ac-2_prm_2 | ACME interal method | organization-defined personnel or roles |
+| ac-2_prm_3 | standard operations | organization-defined procedures or conditions |
+| ac-2_prm_4 | daily | organization-defined frequency |
 
 ##### FedRamp Implementation Status.
 
@@ -207,7 +217,6 @@ Add control implementation description here for item ac-2_smt.k
 The organization employs automated mechanisms to support the management of information system accounts.
 
 
-
 #### AC-2(1) Summary information
 
 
@@ -243,6 +252,53 @@ The organization employs automated mechanisms to support the management of infor
 
 Add control implementation description here for control ac-2.1
 
+### AC-4(4) - Content Check Encrypted Information
+
+#### Control Statement
+
+The information system prevents encrypted information from bypassing content-checking mechanisms by blocking the flow of the encrypted information, ACME internal method.
+
+
+#### AC-4(4) Summary information
+
+
+| Parameter ID | Values | Label or Choices |
+|---|---|---|
+| ac-4.4_prm_1 | blocking the flow of the encrypted information, ACME internal method | Choose one or more: decrypting the information; blocking the flow of the encrypted information; terminating communications sessions attempting to pass encrypted information; ACME internal method |
+| ac-4.4_prm_2 | ACME internal method | organization-defined procedure or method |
+
+##### FedRamp Implementation Status.
+
+- Implemented
+
+- Partially implemented
+
+- Planned
+
+- Alternative implementation
+
+- Not Applicable
+
+##### FedRamp Control Origination.
+
+- Service provider Corporate
+
+- Service provider System Specific
+
+- Service Provider Hybrid (Corporate and System Specific)
+
+- Configured by Customer (Customer System Specific)
+
+- Provided by Customer (Customer System Specific)
+
+- Shared (Service Provider and Customer Responsibility)
+
+- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
+
+#### What is the solution and how is it implemented?
+
+Add control implementation description here for control ac-4.4
+
 ## Custom Controls  \(CC\)
 
 
@@ -251,7 +307,6 @@ Add control implementation description here for control ac-2.1
 #### Control Statement
 
 All services should report energy consumed by their service.
-
 
 
 ####  Summary information
@@ -294,7 +349,6 @@ Add control implementation description here for control cc-1
 #### Control Statement
 
 All services must calculate and report total scope 3 energy consumption.
-
 
 
 ####  Summary information
@@ -350,7 +404,6 @@ Any service or offering MUST:
 - \[d\] The process must be documented.
 
 
-
 ####  Summary information
 
 
@@ -403,7 +456,6 @@ Add control implementation description here for item pr-1_smt.d
 ### PR-2 - Registering exemptions to right to delete
 
 #### Control Statement
-
 
 
 ####  Summary information
@@ -461,15 +513,14 @@ The organization:
   - \[2.\] System and communications protection procedures bi-monthly.
 
 
-
 #### SC-1 Summary information
 
 
-| Parameter ID | Value |
-|---|---|
-| sc-1_prm_1 | assistants |
-| sc-1_prm_2 | hourly |
-| sc-1_prm_3 | bi-monthly |
+| Parameter ID | Values | Label or Choices |
+|---|---|---|
+| sc-1_prm_1 | assistants | organization-defined personnel or roles |
+| sc-1_prm_2 | hourly | organization-defined frequency |
+| sc-1_prm_3 | bi-monthly | organization-defined frequency |
 
 ##### FedRamp Implementation Status.
 
@@ -514,7 +565,6 @@ Add control implementation description here for item sc-1_smt.b
 #### Control Statement
 
 The information system separates user functionality (including user interface services) from information system management functionality.
-
 
 
 #### SC-2 Summary information

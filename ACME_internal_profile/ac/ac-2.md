@@ -29,7 +29,7 @@ x-trestle-set-params:
     values: privileged
     label: organization-defined information system account types
   ac-2_prm_2:
-    values: officer
+    values: ACME interal method
     label: organization-defined personnel or roles
   ac-2_prm_3:
     values: standard operations

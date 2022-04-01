@@ -9,17 +9,17 @@ reviewed-by:
     date:
 x-trestle-set-params:
   ac-1_prm_1:
+    label: organization-defined personnel or roles
     profile-values: executives
     values:
-    label: organization-defined personnel or roles
   ac-1_prm_2:
+    label: organization-defined frequency
     profile-values: monthly
     values:
-    label: organization-defined frequency
   ac-1_prm_3:
+    label: organization-defined frequency
     profile-values: weekly
     values:
-    label: organization-defined frequency
 sort-id: ac-01
 ---
 

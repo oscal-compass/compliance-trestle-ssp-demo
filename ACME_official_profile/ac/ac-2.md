@@ -9,21 +9,21 @@ reviewed-by:
     date:
 x-trestle-set-params:
   ac-2_prm_1:
+    label: organization-defined information system account types
     profile-values: privileged
     values:
-    label: organization-defined information system account types
   ac-2_prm_2:
-    profile-values: officer
-    values:
     label: organization-defined personnel or roles
+    profile-values: ACME interal method
+    values:
   ac-2_prm_3:
+    label: organization-defined procedures or conditions
     profile-values: standard operations
     values:
-    label: organization-defined procedures or conditions
   ac-2_prm_4:
+    label: organization-defined frequency
     profile-values: daily
     values:
-    label: organization-defined frequency
 sort-id: ac-02
 ---
 

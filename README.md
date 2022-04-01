@@ -2,6 +2,8 @@
 
 [Compliance-trestle](https://ibm.github.io/compliance-trestle) (trestle) is an assembly of functionality to facilitate compliance-as-code workflows, anchored in the [Open Security Controls Assessment Language](https://pages.nist.gov/OSCAL/) (OSCAL).
 
+This demo requires trestle release 1.0.0 or greater.
+
 This repository illustrates how to use `trestle author` functionality to make OSCAL more approachable. 
 Specifically it shows how some tasks, such as writing corporate guidance, SSP control implementation descriptions and setting of parameters can be simplified using a markdown workflow.
 
@@ -63,6 +65,7 @@ A sync between the OSCAL and markdown equaivalents can be triggered by running `
 
 
 ## Current caveats:
+- trestle version 1.0.0 or greater
 - Link resolution
   - In order for pandoc to operate correctly on links (such as images) they must be correct in the final output. This implies that all links should relative too the location of the output of `trestle author jinja`
   - The net result: keep any markdown includes in the same folder as the output of `trestle author jinja`

@@ -3,7 +3,7 @@
     "uuid": "df053186-52e3-48cd-bdda-ed52216aa064",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2022-03-23T15:25:39.221843+11:00",
+      "last-modified": "2022-03-31T17:48:26.476060+11:00",
       "version": "REPLACE_ME",
       "oscal-version": "1.0.0"
     },
@@ -422,6 +422,85 @@
                   "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
                   "uuid": "65320e77-7a41-4806-ac11-68741fc34322",
                   "description": "Add control implementation description here for control ac-2.1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "094fbbaa-1cb7-4635-a6a5-005268fa7088",
+          "control-id": "ac-4.4",
+          "props": [
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider Corporate"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service provider System Specific"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Service Provider Hybrid (Corporate and System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Configured by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Provided by Customer (Customer System Specific)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Shared (Service Provider and Customer Responsibility)"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Partially implemented"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Planned"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Alternative implementation"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Not Applicable"
+            }
+          ],
+          "statements": [
+            {
+              "statement-id": "ac-4.4_smt",
+              "uuid": "bb71b556-4d6c-451a-97e2-5628e61e1858",
+              "by-components": [
+                {
+                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
+                  "uuid": "11880625-476f-4991-841a-0aa0e23391a5",
+                  "description": "Add control implementation description here for control ac-4.4"
                 }
               ]
             }

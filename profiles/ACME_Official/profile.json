@@ -3,7 +3,7 @@
     "uuid": "7bd0c149-c1ce-4278-8709-84d8585af4ce",
     "metadata": {
       "title": "ACME Inc. official controls profile.",
-      "last-modified": "2022-03-23T15:32:17.691743+11:00",
+      "last-modified": "2022-04-01T12:38:22.694086+11:00",
       "version": "0.0.1",
       "oscal-version": "1.0.0",
       "remarks": "Abbreviated for demonstration purposes."
@@ -17,6 +17,7 @@
               "ac-1",
               "ac-2",
               "ac-2.1",
+              "ac-4.4",
               "sc-1",
               "sc-2"
             ]
@@ -68,7 +69,7 @@
           "param-id": "ac-2_prm_2",
           "label": "organization-defined personnel or roles",
           "values": [
-            "officer"
+            "ACME interal method"
           ]
         },
         {
@@ -83,6 +84,19 @@
           "label": "organization-defined frequency",
           "values": [
             "daily"
+          ]
+        },
+        {
+          "param-id": "ac-4.4_prm_1",
+          "values": [
+            "blocking the flow of the encrypted information",
+            "ACME internal method"
+          ]
+        },
+        {
+          "param-id": "ac-4.4_prm_2",
+          "values": [
+            "ACME internal method"
           ]
         },
         {

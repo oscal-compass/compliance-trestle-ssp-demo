@@ -3,7 +3,7 @@ pre-commit:
 
 install:
 	python3 -m pip install  --upgrade pip setuptools
-	python3 -m pip install 'compliance-trestle>=0.33.0'
+	python3 -m pip install 'compliance-trestle>=1.0.0'
 	python3 -m pip install pandas gitpython
 	python3 -m pip install pre-commit
 	python3 -m pip install python-semantic-release

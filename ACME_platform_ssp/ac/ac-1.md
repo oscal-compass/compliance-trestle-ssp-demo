@@ -24,6 +24,7 @@ x-trestle-fedramp-props:
     - Alternative implementation
     - Not Applicable
   responsible-roles:
+sort-id: ac-01
 ---
 
 # ac-1 - \[Access Control\] Access Control Policy and Procedures
@@ -32,54 +33,54 @@ x-trestle-fedramp-props:
 
 The organization:
 
-- \[a\] Develops, documents, and disseminates to organization-defined personnel or roles:
+- \[a.\] Develops, documents, and disseminates to executives:
 
-  - \[1\] An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
-  - \[2\] Procedures to facilitate the implementation of the access control policy and associated access controls; and
+  - \[1.\] An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+  - \[2.\] Procedures to facilitate the implementation of the access control policy and associated access controls; and
 
-- \[b\] Reviews and updates the current:
+- \[b.\] Reviews and updates the current:
 
-  - \[1\] Access control policy organization-defined frequency; and
-  - \[2\] Access control procedures organization-defined frequency.
+  - \[1.\] Access control policy monthly; and
+  - \[2.\] Access control procedures weekly.
 
 ## Control Objective
 
 Determine if the organization:
 
-- \[a_obj\]
+- \[AC-1(a)\]
 
-  - \[1_obj\]
+  - \[AC-1(a)(1)\]
 
-    - \[1\] develops and documents an access control policy that addresses:
+    - \[AC-1(a)(1)[1]\] develops and documents an access control policy that addresses:
 
-      - \[a\] purpose;
-      - \[b\] scope;
-      - \[c\] roles;
-      - \[d\] responsibilities;
-      - \[e\] management commitment;
-      - \[f\] coordination among organizational entities;
-      - \[g\] compliance;
+      - \[AC-1(a)(1)[1][a]\] purpose;
+      - \[AC-1(a)(1)[1][b]\] scope;
+      - \[AC-1(a)(1)[1][c]\] roles;
+      - \[AC-1(a)(1)[1][d]\] responsibilities;
+      - \[AC-1(a)(1)[1][e]\] management commitment;
+      - \[AC-1(a)(1)[1][f]\] coordination among organizational entities;
+      - \[AC-1(a)(1)[1][g]\] compliance;
 
-    - \[2\] defines personnel or roles to whom the access control policy are to be disseminated;
-    - \[3\] disseminates the access control policy to organization-defined personnel or roles;
+    - \[AC-1(a)(1)[2]\] defines personnel or roles to whom the access control policy are to be disseminated;
+    - \[AC-1(a)(1)[3]\] disseminates the access control policy to organization-defined personnel or roles;
 
-  - \[2_obj\]
+  - \[AC-1(a)(2)\]
 
-    - \[1\] develops and documents procedures to facilitate the implementation of the access control policy and associated access control controls;
-    - \[2\] defines personnel or roles to whom the procedures are to be disseminated;
-    - \[3\] disseminates the procedures to organization-defined personnel or roles;
+    - \[AC-1(a)(2)[1]\] develops and documents procedures to facilitate the implementation of the access control policy and associated access control controls;
+    - \[AC-1(a)(2)[2]\] defines personnel or roles to whom the procedures are to be disseminated;
+    - \[AC-1(a)(2)[3]\] disseminates the procedures to organization-defined personnel or roles;
 
-- \[b_obj\]
+- \[AC-1(b)\]
 
-  - \[1_obj\]
+  - \[AC-1(b)(1)\]
 
-    - \[1\] defines the frequency to review and update the current access control policy;
-    - \[2\] reviews and updates the current access control policy with the organization-defined frequency;
+    - \[AC-1(b)(1)[1]\] defines the frequency to review and update the current access control policy;
+    - \[AC-1(b)(1)[2]\] reviews and updates the current access control policy with the organization-defined frequency;
 
-  - \[2_obj\]
+  - \[AC-1(b)(2)\]
 
-    - \[1\] defines the frequency to review and update the current access control procedures; and
-    - \[2\] reviews and updates the current access control procedures with the organization-defined frequency.
+    - \[AC-1(b)(2)[1]\] defines the frequency to review and update the current access control procedures; and
+    - \[AC-1(b)(2)[2]\] reviews and updates the current access control procedures with the organization-defined frequency.
 
 ## Control acme_guidance
 
@@ -99,7 +100,7 @@ ______________________________________________________________________
 
 ## Implementation a.
 
-ACME CISO is responsible for updating documentation on intranet.acme.com/ciso/access-control, on an annual basis. This website becomes the single source of truth for all access-control policies.
+Add control implementation description here for item ac-1_smt.a
 
 ______________________________________________________________________
 

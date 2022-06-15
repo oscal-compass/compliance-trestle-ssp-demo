@@ -1,13 +1,13 @@
 {
   "catalog": {
-    "uuid": "4e93be7b-8e35-443d-85ae-61b58fa3ef5f",
+    "uuid": "9152e482-48fa-4a00-a1c9-2df5d990af20",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2022-01-04T17:57:58.934280+11:00",
+      "last-modified": "2022-06-15T10:44:31.792673+10:00",
       "version": "REPLACE_ME",
       "oscal-version": "1.0.0"
     },
-    "controls": [],
+    "params": [],
     "groups": [
       {
         "id": "cc",

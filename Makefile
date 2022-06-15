@@ -3,7 +3,7 @@ pre-commit:
 
 install:
 	python3 -m pip install  --upgrade pip setuptools
-	python3 -m pip install 'compliance-trestle>=0.33.0'
+	python3 -m pip install 'compliance-trestle>=1.0.0'
 	python3 -m pip install pandas gitpython
 	python3 -m pip install pre-commit
 	python3 -m pip install python-semantic-release
@@ -14,9 +14,9 @@ mdformat:
 
 update-markdown: update-oscal
 	trestle author catalog-generate --name ACME_custom --output ACME_custom_controls
-	trestle author profile-generate --name ACME_Official --output ACME_official_profile --set-parameters -y assets/extra-profile-metadata.yml -phv
-	trestle author profile-generate --name ACME_int_guidance --output ACME_internal_profile -y assets/extra-ssp-metadata.yml -phv
-	trestle author ssp-generate --profile ACME_int_guidance --output ACME_platform_ssp -y assets/extra-ssp-metadata.yml -phv
+	trestle author profile-generate --name ACME_Official --output ACME_official_profile -y assets/extra-profile-metadata.yml
+	trestle author profile-generate --name ACME_int_guidance --output ACME_internal_profile -y assets/extra-ssp-metadata.yml
+	trestle author ssp-generate --profile ACME_int_guidance --output ACME_platform_ssp -y assets/extra-ssp-metadata.yml
 
 update-oscal:
 	trestle author catalog-assemble -m ACME_custom_controls -o ACME_custom
@@ -26,7 +26,7 @@ update-oscal:
 
 bootstrap-markdown:
 	trestle author catalog-generate --name ACME_custom --output ACME_custom_controls
-	trestle author profile-generate --name ACME_Official --output ACME_official_profile --set-parameters -y assets/extra-profile-metadata.yml
+	trestle author profile-generate --name ACME_Official --output ACME_official_profile -y assets/extra-profile-metadata.yml
 	trestle author profile-generate --name ACME_int_guidance --output ACME_internal_profile -y assets/extra-ssp-metadata.yml
 	trestle author ssp-generate --profile ACME_int_guidance --output ACME_platform_ssp -y assets/extra-ssp-metadata.yml
 

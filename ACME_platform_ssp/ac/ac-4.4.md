@@ -24,27 +24,32 @@ x-trestle-fedramp-props:
     - Alternative implementation
     - Not Applicable
   responsible-roles:
-sort-id: ac-02.01
+sort-id: ac-04.04
 ---
 
-# ac-2.1 - \[Access Control\] Automated System Account Management
+# ac-4.4 - \[Access Control\] Content Check Encrypted Information
 
 ## Control Statement
 
-The organization employs automated mechanisms to support the management of information system accounts.
+The information system prevents encrypted information from bypassing content-checking mechanisms by blocking the flow of the encrypted information, ACME internal method.
 
 ## Control Objective
 
-Determine if the organization employs automated mechanisms to support the management of information system accounts.
+Determine if:
 
-## Control guidance
+- \[AC-4(4)[1]\] the organization defines a procedure or method to be employed to prevent encrypted information from bypassing content-checking mechanisms;
 
-The use of automated mechanisms can include, for example: using email or text messaging to automatically notify account managers when users are terminated or transferred; using the information system to monitor account usage; and using telephonic notification to report atypical system account usage.
+- \[AC-4(4)[2]\] the information system prevents encrypted information from bypassing content-checking mechanisms by doing one or more of the following:
+
+  - \[AC-4(4)[2][a]\] decrypting the information;
+  - \[AC-4(4)[2][b]\] blocking the flow of the encrypted information;
+  - \[AC-4(4)[2][c]\] terminating communications sessions attempting to pass encrypted information; and/or
+  - \[AC-4(4)[2][d]\] employing the organization-defined procedure or method.
 
 ______________________________________________________________________
 
 ## What is the solution and how is it implemented?
 
-Add control implementation description here for control ac-2.1
+Add control implementation description here for control ac-4.4
 
 ______________________________________________________________________

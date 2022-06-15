@@ -3,7 +3,7 @@
     "uuid": "7bd0c149-c1ce-4278-8709-84d8585af4ce",
     "metadata": {
       "title": "ACME Inc. official controls profile.",
-      "last-modified": "2021-12-22T13:19:19.423925+11:00",
+      "last-modified": "2022-04-01T12:38:22.694086+11:00",
       "version": "0.0.1",
       "oscal-version": "1.0.0",
       "remarks": "Abbreviated for demonstration purposes."
@@ -17,6 +17,7 @@
               "ac-1",
               "ac-2",
               "ac-2.1",
+              "ac-4.4",
               "sc-1",
               "sc-2"
             ]
@@ -38,62 +39,85 @@
       "set-parameters": [
         {
           "param-id": "ac-1_prm_1",
+          "label": "organization-defined personnel or roles",
           "values": [
-            "organization-defined personnel or roles"
+            "executives"
           ]
         },
         {
           "param-id": "ac-1_prm_2",
+          "label": "organization-defined frequency",
           "values": [
-            "organization-defined frequency"
+            "monthly"
           ]
         },
         {
           "param-id": "ac-1_prm_3",
+          "label": "organization-defined frequency",
           "values": [
-            "organization-defined frequency"
+            "weekly"
           ]
         },
         {
           "param-id": "ac-2_prm_1",
+          "label": "organization-defined information system account types",
           "values": [
-            "organization-defined information system account types"
+            "privileged"
           ]
         },
         {
           "param-id": "ac-2_prm_2",
+          "label": "organization-defined personnel or roles",
           "values": [
-            "organization-defined personnel or roles"
+            "ACME interal method"
           ]
         },
         {
           "param-id": "ac-2_prm_3",
+          "label": "organization-defined procedures or conditions",
           "values": [
-            "organization-defined procedures or conditions"
+            "standard operations"
           ]
         },
         {
           "param-id": "ac-2_prm_4",
+          "label": "organization-defined frequency",
           "values": [
-            "organization-defined frequency"
+            "daily"
+          ]
+        },
+        {
+          "param-id": "ac-4.4_prm_1",
+          "values": [
+            "blocking the flow of the encrypted information",
+            "ACME internal method"
+          ]
+        },
+        {
+          "param-id": "ac-4.4_prm_2",
+          "values": [
+            "ACME internal method"
           ]
         },
         {
           "param-id": "sc-1_prm_1",
+          "label": "organization-defined personnel or roles",
           "values": [
-            "organization-defined personnel or roles"
+            "assistants"
           ]
         },
         {
           "param-id": "sc-1_prm_2",
+          "label": "organization-defined frequency",
           "values": [
-            "organization-defined frequency"
+            "hourly"
           ]
         },
         {
           "param-id": "sc-1_prm_3",
+          "label": "organization-defined frequency",
           "values": [
-            "organization-defined frequency"
+            "bi-monthly"
           ]
         }
       ],
@@ -108,6 +132,7 @@
                 {
                   "id": "ac-1_acme_guidance",
                   "name": "acme_guidance",
+                  "title": "acme_guidance",
                   "prose": "Access control documentation should be at one centrally managed intranet site that is consistent across the corporation. Website should be indexed in intranet search engine."
                 }
               ]

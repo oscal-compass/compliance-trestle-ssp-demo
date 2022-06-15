@@ -24,6 +24,7 @@ x-trestle-fedramp-props:
     - Alternative implementation
     - Not Applicable
   responsible-roles:
+sort-id: sc-02
 ---
 
 # sc-2 - \[System and Communications Protection\] Application Partitioning

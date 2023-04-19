@@ -1,14 +1,14 @@
 {
   "system-security-plan": {
-    "uuid": "df053186-52e3-48cd-bdda-ed52216aa064",
+    "uuid": "42d83f6b-abaf-471c-92fa-d1213d43e373",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2022-03-31T17:48:26.476060+11:00",
+      "last-modified": "2023-04-19T13:23:19.491573+10:00",
       "version": "REPLACE_ME",
-      "oscal-version": "1.0.0"
+      "oscal-version": "1.0.4"
     },
     "import-profile": {
-      "href": "REPLACE_ME"
+      "href": "trestle://profiles/ACME_int_guidance/profile.json"
     },
     "system-characteristics": {
       "system-ids": [
@@ -51,17 +51,183 @@
     "system-implementation": {
       "users": [
         {
-          "uuid": "fa29c889-855e-486b-bf72-19221ae97cd8"
+          "uuid": "e848174c-89d7-4039-b510-6ae91213b468"
         }
       ],
       "components": [
         {
-          "uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-          "type": "REPLACE_ME",
-          "title": "This System",
-          "description": "REPLACE_ME",
+          "uuid": "06008ecd-5ea6-46fa-849d-72db7d1b8bda",
+          "type": "service",
+          "title": "IDSERVICE",
+          "description": "IDSERVICE",
+          "props": [
+            {
+              "name": "Rule_Id",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "idservice_password_min_length",
+              "remarks": "rule_set_0"
+            },
+            {
+              "name": "Rule_Description",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "Ensure min. length of password",
+              "remarks": "rule_set_0"
+            },
+            {
+              "name": "Parameter_Id",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "idservice_min_pass_len",
+              "remarks": "rule_set_0"
+            },
+            {
+              "name": "Parameter_Description",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "Min. password length",
+              "remarks": "rule_set_0"
+            },
+            {
+              "name": "Parameter_Value_Alternatives",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "8, 12, 16",
+              "remarks": "rule_set_0"
+            },
+            {
+              "name": "Rule_Id",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "idservice_password_not_reuse_min_count",
+              "remarks": "rule_set_1"
+            },
+            {
+              "name": "Rule_Description",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "Ensure password is not reused below # count",
+              "remarks": "rule_set_1"
+            },
+            {
+              "name": "Parameter_Id",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "idservice_min_pass_reuse_count",
+              "remarks": "rule_set_1"
+            },
+            {
+              "name": "Parameter_Description",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "Min. password reuse count",
+              "remarks": "rule_set_1"
+            },
+            {
+              "name": "Parameter_Value_Alternatives",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "4, 8",
+              "remarks": "rule_set_1"
+            },
+            {
+              "name": "Rule_Id",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "idservice_strong_pass_enabled",
+              "remarks": "rule_set_2"
+            },
+            {
+              "name": "Rule_Description",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "Ensure strong password policy with mix of alphabets, digits, and special chars",
+              "remarks": "rule_set_2"
+            }
+          ],
           "status": {
-            "state": "under-development"
+            "state": "operational"
+          }
+        },
+        {
+          "uuid": "ccc2e537-8991-4f37-92c7-320910bc72b1",
+          "type": "service",
+          "title": "DB",
+          "description": "DB",
+          "props": [
+            {
+              "name": "Rule_Id",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "db_password_min_length",
+              "remarks": "rule_set_3"
+            },
+            {
+              "name": "Rule_Description",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "Ensure min. length of password",
+              "remarks": "rule_set_3"
+            },
+            {
+              "name": "Parameter_Id",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "db_min_pass_len",
+              "remarks": "rule_set_3"
+            },
+            {
+              "name": "Parameter_Description",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "Min. password length",
+              "remarks": "rule_set_3"
+            },
+            {
+              "name": "Parameter_Value_Alternatives",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "8, 12, 16",
+              "remarks": "rule_set_3"
+            },
+            {
+              "name": "Rule_Id",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "db_password_not_reuse_min_count",
+              "remarks": "rule_set_4"
+            },
+            {
+              "name": "Rule_Description",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "Ensure password is not reused below # count",
+              "remarks": "rule_set_4"
+            },
+            {
+              "name": "Parameter_Id",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "db_min_pass_reuse_count",
+              "remarks": "rule_set_4"
+            },
+            {
+              "name": "Parameter_Description",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "Min. password reuse count",
+              "remarks": "rule_set_4"
+            },
+            {
+              "name": "Parameter_Value_Alternatives",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "4, 8",
+              "remarks": "rule_set_4"
+            },
+            {
+              "name": "Rule_Id",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "db_authorized_users_only",
+              "remarks": "rule_set_5"
+            },
+            {
+              "name": "Rule_Description",
+              "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+              "value": "Ensure only authorized users can access",
+              "remarks": "rule_set_5"
+            }
+          ],
+          "status": {
+            "state": "operational"
+          }
+        },
+        {
+          "uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+          "type": "this-system",
+          "title": "This System",
+          "description": "",
+          "status": {
+            "state": "operational"
           }
         }
       ]
@@ -70,957 +236,550 @@
       "description": "This is the control implementation for the system.",
       "implemented-requirements": [
         {
-          "uuid": "e5848114-138f-46eb-9046-f1fba3a01d8a",
-          "control-id": "ac-1",
-          "props": [
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider Corporate"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider System Specific"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service Provider Hybrid (Corporate and System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Configured by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Provided by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Shared (Service Provider and Customer Responsibility)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Partially implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Planned"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Alternative implementation"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Not Applicable"
-            }
-          ],
+          "uuid": "fc7ea275-03d2-4b01-b9f8-7723fd27fd22",
+          "control-id": "ia-5.1",
           "statements": [
             {
-              "statement-id": "ac-1_smt.a",
-              "uuid": "6dcc8912-303b-4127-8c43-debb8e82a458",
+              "statement-id": "ia-5.1_smt.a",
+              "uuid": "6788a656-5f5c-40ec-9197-2aec5bd17e98",
               "by-components": [
                 {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "83f683fb-4432-44a0-8350-1598d3dc7273",
-                  "description": "Add control implementation description here for item ac-1_smt.a"
+                  "component-uuid": "06008ecd-5ea6-46fa-849d-72db7d1b8bda",
+                  "uuid": "603c66c7-4f5c-4ea8-a2bb-41d630b67efb",
+                  "description": "",
+                  "props": [
+                    {
+                      "name": "Rule_Id",
+                      "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                      "value": "idservice_password_min_length"
+                    },
+                    {
+                      "name": "Rule_Id",
+                      "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                      "value": "idservice_strong_pass_enabled"
+                    }
+                  ],
+                  "set-parameters": [
+                    {
+                      "param-id": "idservice_min_pass_len",
+                      "values": [
+                        "8"
+                      ]
+                    }
+                  ],
+                  "implementation-status": {
+                    "state": "planned"
+                  }
+                },
+                {
+                  "component-uuid": "ccc2e537-8991-4f37-92c7-320910bc72b1",
+                  "uuid": "88634ad1-5ad4-45a4-b040-b9edb5273017",
+                  "description": "",
+                  "props": [
+                    {
+                      "name": "Rule_Id",
+                      "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                      "value": "db_password_min_length"
+                    }
+                  ],
+                  "set-parameters": [
+                    {
+                      "param-id": "db_min_pass_len",
+                      "values": [
+                        "16"
+                      ]
+                    }
+                  ],
+                  "implementation-status": {
+                    "state": "planned"
+                  }
                 }
               ]
             },
             {
-              "statement-id": "ac-1_smt.b",
-              "uuid": "698247da-b208-4b4b-beab-dbac3b2c7b08",
+              "statement-id": "ia-5.1_smt.e",
+              "uuid": "28a9145e-3ec8-4b4f-beb9-85e3707f2711",
               "by-components": [
                 {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "7e5e0041-cb6c-44df-839e-dc59145991cd",
-                  "description": "Add control implementation description here for item ac-1_smt.b"
+                  "component-uuid": "06008ecd-5ea6-46fa-849d-72db7d1b8bda",
+                  "uuid": "a568c4d9-81a2-4812-83b2-4d63001acaf0",
+                  "description": "",
+                  "props": [
+                    {
+                      "name": "Rule_Id",
+                      "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                      "value": "idservice_password_not_reuse_min_count"
+                    }
+                  ],
+                  "set-parameters": [
+                    {
+                      "param-id": "idservice_min_pass_reuse_count",
+                      "values": [
+                        "4"
+                      ]
+                    }
+                  ],
+                  "implementation-status": {
+                    "state": "planned"
+                  }
+                },
+                {
+                  "component-uuid": "ccc2e537-8991-4f37-92c7-320910bc72b1",
+                  "uuid": "4fe109c9-9983-47e5-af4b-f63cd1d81038",
+                  "description": "",
+                  "props": [
+                    {
+                      "name": "Rule_Id",
+                      "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                      "value": "db_password_not_reuse_min_count"
+                    }
+                  ],
+                  "set-parameters": [
+                    {
+                      "param-id": "db_min_pass_reuse_count",
+                      "values": [
+                        "8"
+                      ]
+                    }
+                  ],
+                  "implementation-status": {
+                    "state": "planned"
+                  }
                 }
               ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+              "uuid": "a1f7afe3-6d54-4af5-8e96-d204e080f8d5",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
             }
           ]
         },
         {
-          "uuid": "f70d5665-1452-42a0-bed3-485fcdb67046",
-          "control-id": "ac-2",
-          "props": [
+          "uuid": "889f06a7-bd8f-4e1c-9023-b15ad2e1dc4e",
+          "control-id": "ia-5.4",
+          "by-components": [
             {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider Corporate"
+              "component-uuid": "06008ecd-5ea6-46fa-849d-72db7d1b8bda",
+              "uuid": "5307a9fa-7f8b-470b-a0aa-df5bd834281e",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idservice_password_min_length"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idservice_strong_pass_enabled"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "idservice_min_pass_len",
+                  "values": [
+                    "8"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
             },
             {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider System Specific"
+              "component-uuid": "ccc2e537-8991-4f37-92c7-320910bc72b1",
+              "uuid": "4e017271-b630-47fe-a22c-77a9dce7856c",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "db_password_min_length"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "db_min_pass_len",
+                  "values": [
+                    "16"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
             },
             {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service Provider Hybrid (Corporate and System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Configured by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Provided by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Shared (Service Provider and Customer Responsibility)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Partially implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Planned"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Alternative implementation"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Not Applicable"
+              "component-uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+              "uuid": "3cad229b-42c7-4133-8e59-2096aa7da7b4",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
             }
-          ],
+          ]
+        },
+        {
+          "uuid": "9964bf1f-0cdc-499b-9c2b-5deb07345f00",
+          "control-id": "cc-1",
+          "by-components": [
+            {
+              "component-uuid": "06008ecd-5ea6-46fa-849d-72db7d1b8bda",
+              "uuid": "bffd3390-87f6-4c77-8341-e31396429fe9",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idservice_password_min_length"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idservice_strong_pass_enabled"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "idservice_min_pass_len",
+                  "values": [
+                    "8"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "ccc2e537-8991-4f37-92c7-320910bc72b1",
+              "uuid": "30828719-c66e-40a1-99b7-09ecb264e0fd",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "db_password_min_length"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "db_min_pass_len",
+                  "values": [
+                    "16"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+              "uuid": "f778d6d6-687c-4ce0-a59b-4fbaedaec7aa",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "3b0f7a89-d50a-4816-bf98-ac48e6c9e99b",
+          "control-id": "cc-2",
+          "by-components": [
+            {
+              "component-uuid": "06008ecd-5ea6-46fa-849d-72db7d1b8bda",
+              "uuid": "72a91c70-f1ed-40d2-a562-559ab7a8137b",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idservice_password_min_length"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "idservice_min_pass_len",
+                  "values": [
+                    "8"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+              "uuid": "b313783a-2c4d-4316-bc9b-1c1b81462d1f",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "f7e01d1b-fed9-4eaf-9a4e-7a68312c8d5f",
+          "control-id": "pr-1",
+          "by-components": [
+            {
+              "component-uuid": "06008ecd-5ea6-46fa-849d-72db7d1b8bda",
+              "uuid": "3b9a2f43-5956-4aab-852a-3777fb64ada3",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idservice_password_min_length"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "idservice_min_pass_len",
+                  "values": [
+                    "8"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "ccc2e537-8991-4f37-92c7-320910bc72b1",
+              "uuid": "f43effb7-ee53-43c2-a30d-7cc3455a3c69",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "db_password_not_reuse_min_count"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "db_min_pass_reuse_count",
+                  "values": [
+                    "8"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+              "uuid": "ccd2a2c9-f39b-48d8-bf11-ce1f571cd9cb",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "70cb7c2b-3f80-4384-98ff-7229ca51e47d",
+          "control-id": "pr-2",
+          "by-components": [
+            {
+              "component-uuid": "06008ecd-5ea6-46fa-849d-72db7d1b8bda",
+              "uuid": "56eea1bf-e3f5-4246-bff5-2e9f6542484d",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idservice_password_not_reuse_min_count"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "idservice_min_pass_reuse_count",
+                  "values": [
+                    "4"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "ccc2e537-8991-4f37-92c7-320910bc72b1",
+              "uuid": "cd8a7b94-80dc-400c-bbcc-c6ec558eca12",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "db_password_min_length"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "db_password_not_reuse_min_count"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "db_min_pass_len",
+                  "values": [
+                    "16"
+                  ]
+                },
+                {
+                  "param-id": "db_min_pass_reuse_count",
+                  "values": [
+                    "8"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+              "uuid": "181352d1-0f31-4276-a255-fc33c26a795c",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "277fbf26-6982-4fc9-b399-f60a8a98f1ba",
+          "control-id": "sc-1",
+          "by-components": [
+            {
+              "component-uuid": "06008ecd-5ea6-46fa-849d-72db7d1b8bda",
+              "uuid": "ed711138-e867-46a6-8b49-3b8b2156f29b",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idservice_password_not_reuse_min_count"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "idservice_min_pass_reuse_count",
+                  "values": [
+                    "4"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+              "uuid": "2c69f57a-0004-4060-9c7f-4ed60c1cb23d",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "c06728a0-535b-4965-9910-d6779fd2fe60",
+          "control-id": "sc-2",
+          "by-components": [
+            {
+              "component-uuid": "ccc2e537-8991-4f37-92c7-320910bc72b1",
+              "uuid": "fe1baca5-983e-40d3-b754-a56177244da6",
+              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "db_password_not_reuse_min_count"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "db_min_pass_reuse_count",
+                  "values": [
+                    "8"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+              "uuid": "46781122-7308-402e-80fd-47effed87397",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "c5dd671a-e0d6-4643-9945-0548820527cf",
+          "control-id": "ac-2",
           "statements": [
-            {
-              "statement-id": "ac-2_smt.a",
-              "uuid": "57e6b406-7fcf-4105-b471-05049b9a1f61",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "980a971e-3f86-469f-a733-5295ddd759e3",
-                  "description": "Add control implementation description here for item ac-2_smt.a"
-                }
-              ]
-            },
-            {
-              "statement-id": "ac-2_smt.b",
-              "uuid": "19b2643c-a62f-417a-926f-4d0d66ed6cf5",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "494ffda9-a9b1-468c-9c76-1e3c323bba2f",
-                  "description": "Add control implementation description here for item ac-2_smt.b"
-                }
-              ]
-            },
-            {
-              "statement-id": "ac-2_smt.c",
-              "uuid": "fa9ac03b-8e5e-42ec-a2c1-e2e3e15dacf3",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "88320a21-29c2-4190-bcf5-0aa86bd93c7e",
-                  "description": "Add control implementation description here for item ac-2_smt.c"
-                }
-              ]
-            },
             {
               "statement-id": "ac-2_smt.d",
-              "uuid": "653fa663-d745-424c-ad6c-09cc1f7f4ee2",
+              "uuid": "e90bfd41-974d-4883-b586-e42c8b95b213",
               "by-components": [
                 {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "3bcf6ef3-d154-4027-ac99-6afd733bb166",
-                  "description": "Add control implementation description here for item ac-2_smt.d"
+                  "component-uuid": "ccc2e537-8991-4f37-92c7-320910bc72b1",
+                  "uuid": "0a9b7431-5afa-4300-a23c-39d751510e03",
+                  "description": "",
+                  "props": [
+                    {
+                      "name": "Rule_Id",
+                      "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                      "value": "db_authorized_users_only"
+                    }
+                  ],
+                  "implementation-status": {
+                    "state": "planned"
+                  }
                 }
               ]
-            },
+            }
+          ],
+          "by-components": [
             {
-              "statement-id": "ac-2_smt.e",
-              "uuid": "142898a5-8a9e-4d74-8f3f-e4269195073e",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "34b1c977-37f1-43fc-b7bc-47a42e2ded90",
-                  "description": "Add control implementation description here for item ac-2_smt.e"
-                }
-              ]
-            },
-            {
-              "statement-id": "ac-2_smt.f",
-              "uuid": "4ea11694-bdea-4ecf-9e5a-d364418b8f43",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "6cf7558f-759d-40ba-b7b8-ee66ada24a76",
-                  "description": "Add control implementation description here for item ac-2_smt.f"
-                }
-              ]
-            },
-            {
-              "statement-id": "ac-2_smt.g",
-              "uuid": "d277b1f6-a521-401a-bd0c-d42e55a6c8a8",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "302f4944-bd7f-4e84-84a8-2d0a58a5297f",
-                  "description": "Add control implementation description here for item ac-2_smt.g"
-                }
-              ]
-            },
-            {
-              "statement-id": "ac-2_smt.h",
-              "uuid": "a40ac706-d7ff-4859-aeaa-6f1895e63000",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "a6b878b7-c9e9-48c0-a040-337b954d0c6d",
-                  "description": "Add control implementation description here for item ac-2_smt.h"
-                }
-              ]
-            },
-            {
-              "statement-id": "ac-2_smt.i",
-              "uuid": "7ef16c2c-84af-4b8d-9f79-859c1e9736a9",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "fa808f19-fb6c-429c-8742-12268f10aeb5",
-                  "description": "Add control implementation description here for item ac-2_smt.i"
-                }
-              ]
-            },
-            {
-              "statement-id": "ac-2_smt.j",
-              "uuid": "5671f69d-2274-482a-90a1-c2e5d75236ba",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "a25dab9c-d62b-4cdf-9d6a-6b66c1e8b617",
-                  "description": "Add control implementation description here for item ac-2_smt.j"
-                }
-              ]
-            },
-            {
-              "statement-id": "ac-2_smt.k",
-              "uuid": "a5ca6dc2-f0ca-4f96-9189-7cc5bebf3a92",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "c1980a4a-dfb7-407d-8b39-4fec6537b483",
-                  "description": "Add control implementation description here for item ac-2_smt.k"
-                }
-              ]
+              "component-uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+              "uuid": "2edefcc5-6310-4c0d-a4c3-56c9ef469871",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
             }
           ]
         },
         {
-          "uuid": "3d033371-432b-4449-b089-eb43157cc2c5",
-          "control-id": "ac-2.1",
-          "props": [
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider Corporate"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider System Specific"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service Provider Hybrid (Corporate and System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Configured by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Provided by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Shared (Service Provider and Customer Responsibility)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Partially implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Planned"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Alternative implementation"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Not Applicable"
-            }
-          ],
-          "statements": [
-            {
-              "statement-id": "ac-2.1_smt",
-              "uuid": "495fec27-c66b-4377-b0a8-52bcbdc2dc0b",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "65320e77-7a41-4806-ac11-68741fc34322",
-                  "description": "Add control implementation description here for control ac-2.1"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "uuid": "094fbbaa-1cb7-4635-a6a5-005268fa7088",
-          "control-id": "ac-4.4",
-          "props": [
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider Corporate"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider System Specific"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service Provider Hybrid (Corporate and System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Configured by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Provided by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Shared (Service Provider and Customer Responsibility)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Partially implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Planned"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Alternative implementation"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Not Applicable"
-            }
-          ],
-          "statements": [
-            {
-              "statement-id": "ac-4.4_smt",
-              "uuid": "bb71b556-4d6c-451a-97e2-5628e61e1858",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "11880625-476f-4991-841a-0aa0e23391a5",
-                  "description": "Add control implementation description here for control ac-4.4"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "uuid": "10aa7634-73ec-4eef-9685-92c8d0e6fc57",
-          "control-id": "cc-1",
-          "props": [
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider Corporate"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider System Specific"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service Provider Hybrid (Corporate and System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Configured by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Provided by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Shared (Service Provider and Customer Responsibility)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Partially implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Planned"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Alternative implementation"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Not Applicable"
-            }
-          ],
-          "statements": [
-            {
-              "statement-id": "cc-1_smt",
-              "uuid": "8875c694-dd17-4d9b-a013-5d06534bb72e",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "3fa32040-4508-4c7b-beb4-3bd4c30648d1",
-                  "description": "Add control implementation description here for control cc-1"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "uuid": "185745c1-3fda-43aa-b87f-d978bb41ff61",
-          "control-id": "cc-2",
-          "props": [
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider Corporate"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider System Specific"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service Provider Hybrid (Corporate and System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Configured by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Provided by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Shared (Service Provider and Customer Responsibility)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Partially implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Planned"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Alternative implementation"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Not Applicable"
-            }
-          ],
-          "statements": [
-            {
-              "statement-id": "cc-2_smt",
-              "uuid": "a6e09704-daca-4a77-b158-a9b69359e750",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "268edd4c-373e-436c-aeff-108517d32ba5",
-                  "description": "Add control implementation description here for control cc-2"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "uuid": "50bd8484-5dcc-4d23-8ee4-c115397a2795",
-          "control-id": "pr-1",
-          "props": [
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider Corporate"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider System Specific"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service Provider Hybrid (Corporate and System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Configured by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Provided by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Shared (Service Provider and Customer Responsibility)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Partially implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Planned"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Alternative implementation"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Not Applicable"
-            }
-          ],
-          "statements": [
-            {
-              "statement-id": "pr-1_smt.a",
-              "uuid": "1223665a-91ef-49a2-9359-34bb902eba3e",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "124a8bf4-49e7-4bc5-ac8b-c6b837249543",
-                  "description": "Add control implementation description here for item pr-1_smt.a"
-                }
-              ]
-            },
-            {
-              "statement-id": "pr-1_smt.b",
-              "uuid": "f827c98b-b804-4f96-9355-b34554ee1840",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "0dca5f74-acaa-4056-99d3-efef4aa9a453",
-                  "description": "Add control implementation description here for item pr-1_smt.b"
-                }
-              ]
-            },
-            {
-              "statement-id": "pr-1_smt.c",
-              "uuid": "31e3cafe-07dc-4aae-b9f6-4dfc3387f10c",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "60e1ed17-edf0-4880-a5e3-6425a530e91b",
-                  "description": "Add control implementation description here for item pr-1_smt.c"
-                }
-              ]
-            },
-            {
-              "statement-id": "pr-1_smt.d",
-              "uuid": "0fe51aea-2550-468a-b4b2-5a937d22b529",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "d1c540e0-8b00-43ff-a4cf-8b96a60eccc6",
-                  "description": "Add control implementation description here for item pr-1_smt.d"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "uuid": "8db2ca1f-bab8-4109-89ba-2e093e93510a",
-          "control-id": "pr-2",
-          "props": [
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider Corporate"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider System Specific"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service Provider Hybrid (Corporate and System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Configured by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Provided by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Shared (Service Provider and Customer Responsibility)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Partially implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Planned"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Alternative implementation"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Not Applicable"
-            }
-          ],
-          "statements": [
-            {
-              "statement-id": "pr-2_smt",
-              "uuid": "784b34d3-2282-41e7-a39a-cd9e13133782",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "9c357b7b-7840-4cf7-86d7-d9574e92a14e",
-                  "description": "Add control implementation description here for control pr-2"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "uuid": "83f3d46c-3705-49ff-9b95-d0f958c195b5",
-          "control-id": "sc-1",
-          "props": [
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider Corporate"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider System Specific"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service Provider Hybrid (Corporate and System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Configured by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Provided by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Shared (Service Provider and Customer Responsibility)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Partially implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Planned"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Alternative implementation"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Not Applicable"
-            }
-          ],
-          "statements": [
-            {
-              "statement-id": "sc-1_smt.a",
-              "uuid": "cc3de4b7-e971-46be-a747-fc82ff68eaa3",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "03369abc-1a5e-400b-b557-fadffe87d1e6",
-                  "description": "Add control implementation description here for item sc-1_smt.a"
-                }
-              ]
-            },
-            {
-              "statement-id": "sc-1_smt.b",
-              "uuid": "c89f1967-b030-453d-b100-5d8a29af12a1",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "2a28dafa-69ed-4392-87d0-436f1a12d1b0",
-                  "description": "Add control implementation description here for item sc-1_smt.b"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "uuid": "51c39289-a281-4296-b196-6bff8483599f",
-          "control-id": "sc-2",
-          "props": [
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider Corporate"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service provider System Specific"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Service Provider Hybrid (Corporate and System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Configured by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Provided by Customer (Customer System Specific)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Shared (Service Provider and Customer Responsibility)"
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Partially implemented"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Planned"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Alternative implementation"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "Not Applicable"
-            }
-          ],
-          "statements": [
-            {
-              "statement-id": "sc-2_smt",
-              "uuid": "ae0d9bcd-dcc2-44ac-b8cf-06f6182aa381",
-              "by-components": [
-                {
-                  "component-uuid": "c512cdf4-bcb0-49af-999d-ef3c8828c4a6",
-                  "uuid": "a015aa11-2549-4c88-8ad4-23c38cf07a80",
-                  "description": "Add control implementation description here for control sc-2"
-                }
-              ]
+          "uuid": "55801651-78e2-437e-80a0-35384a6b5e0c",
+          "control-id": "ac-1",
+          "by-components": [
+            {
+              "component-uuid": "20dba9b0-1f03-42d5-a7fd-56d4967e5cc7",
+              "uuid": "071372e5-352a-4962-ab24-d8416b2e9a11",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
             }
           ]
         }

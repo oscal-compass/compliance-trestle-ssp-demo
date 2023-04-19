@@ -3,9 +3,9 @@
     "uuid": "7bd0c149-c1ce-4278-8709-84d8585af4ce",
     "metadata": {
       "title": "ACME Inc. official controls profile.",
-      "last-modified": "2022-04-01T12:38:22.694086+11:00",
+      "last-modified": "2023-04-19T13:03:52.669215+10:00",
       "version": "0.0.1",
-      "oscal-version": "1.0.0",
+      "oscal-version": "1.0.4",
       "remarks": "Abbreviated for demonstration purposes."
     },
     "imports": [
@@ -16,8 +16,8 @@
             "with-ids": [
               "ac-1",
               "ac-2",
-              "ac-2.1",
-              "ac-4.4",
+              "ia-5.1",
+              "ia-5.4",
               "sc-1",
               "sc-2"
             ]
@@ -87,23 +87,41 @@
           ]
         },
         {
-          "param-id": "ac-4.4_prm_1",
+          "param-id": "ia-5.1_prm_1",
           "values": [
             "blocking the flow of the encrypted information",
             "ACME internal method"
           ]
         },
         {
-          "param-id": "ac-4.4_prm_2",
+          "param-id": "ia-5.1_prm_2",
           "values": [
             "ACME internal method"
           ]
         },
         {
-          "param-id": "sc-1_prm_1",
+          "param-id": "ia-5.1_prm_3",
+          "values": [
+            "ACME improved method"
+          ]
+        },
+        {
+          "param-id": "ia-5.1_prm_4",
+          "values": [
+            "ACME final method"
+          ]
+        },
+        {
+          "param-id": "ia-5.4_prm_1",
           "label": "organization-defined personnel or roles",
           "values": [
             "assistants"
+          ]
+        },
+        {
+          "param-id": "sc-1_prm_1",
+          "values": [
+            "as needed"
           ]
         },
         {
@@ -123,16 +141,14 @@
       ],
       "alters": [
         {
-          "control-id": "ac-1",
+          "control-id": "ac-2",
           "adds": [
             {
-              "position": "after",
-              "by-id": "ac-1_smt",
+              "position": "ending",
               "parts": [
                 {
-                  "id": "ac-1_acme_guidance",
+                  "id": "ac-2_acme_guidance",
                   "name": "acme_guidance",
-                  "title": "acme_guidance",
                   "prose": "Access control documentation should be at one centrally managed intranet site that is consistent across the corporation. Website should be indexed in intranet search engine."
                 }
               ]

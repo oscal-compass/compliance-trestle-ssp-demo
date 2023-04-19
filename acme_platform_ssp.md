@@ -45,49 +45,16 @@ The organization:
 #### AC-1 Summary information
 
 
+###### Table of Parameters
+
 | Parameter ID | Values | Label or Choices |
 |---|---|---|
 | ac-1_prm_1 | executives | organization-defined personnel or roles |
 | ac-1_prm_2 | monthly | organization-defined frequency |
 | ac-1_prm_3 | weekly | organization-defined frequency |
 
-##### FedRamp Implementation Status.
-
-- Implemented
-
-- Partially implemented
-
-- Planned
-
-- Alternative implementation
-
-- Not Applicable
-
-##### FedRamp Control Origination.
-
-- Service provider Corporate
-
-- Service provider System Specific
-
-- Service Provider Hybrid (Corporate and System Specific)
-
-- Configured by Customer (Customer System Specific)
-
-- Provided by Customer (Customer System Specific)
-
-- Shared (Service Provider and Customer Responsibility)
-
-- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
-
 #### What is the solution and how is it implemented?
 
-##### Part a.
-
-Add control implementation description here for item ac-1_smt.a
-
-##### Part b.
-
-Add control implementation description here for item ac-1_smt.b
 
 ### AC-2 - Account Management
 
@@ -129,6 +96,8 @@ The organization:
 #### AC-2 Summary information
 
 
+###### Table of Parameters
+
 | Parameter ID | Values | Label or Choices |
 |---|---|---|
 | ac-2_prm_1 | privileged | organization-defined information system account types |
@@ -136,168 +105,8 @@ The organization:
 | ac-2_prm_3 | standard operations | organization-defined procedures or conditions |
 | ac-2_prm_4 | daily | organization-defined frequency |
 
-##### FedRamp Implementation Status.
-
-- Implemented
-
-- Partially implemented
-
-- Planned
-
-- Alternative implementation
-
-- Not Applicable
-
-##### FedRamp Control Origination.
-
-- Service provider Corporate
-
-- Service provider System Specific
-
-- Service Provider Hybrid (Corporate and System Specific)
-
-- Configured by Customer (Customer System Specific)
-
-- Provided by Customer (Customer System Specific)
-
-- Shared (Service Provider and Customer Responsibility)
-
-- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
-
 #### What is the solution and how is it implemented?
 
-##### Part a.
-
-Add control implementation description here for item ac-2_smt.a
-
-##### Part b.
-
-Add control implementation description here for item ac-2_smt.b
-
-##### Part c.
-
-Add control implementation description here for item ac-2_smt.c
-
-##### Part d.
-
-Add control implementation description here for item ac-2_smt.d
-
-##### Part e.
-
-Add control implementation description here for item ac-2_smt.e
-
-##### Part f.
-
-Add control implementation description here for item ac-2_smt.f
-
-##### Part g.
-
-Add control implementation description here for item ac-2_smt.g
-
-##### Part h.
-
-Add control implementation description here for item ac-2_smt.h
-
-##### Part i.
-
-Add control implementation description here for item ac-2_smt.i
-
-##### Part j.
-
-Add control implementation description here for item ac-2_smt.j
-
-##### Part k.
-
-Add control implementation description here for item ac-2_smt.k
-
-### AC-2(1) - Automated System Account Management
-
-#### Control Statement
-
-The organization employs automated mechanisms to support the management of information system accounts.
-
-
-#### AC-2(1) Summary information
-
-
-##### FedRamp Implementation Status.
-
-- Implemented
-
-- Partially implemented
-
-- Planned
-
-- Alternative implementation
-
-- Not Applicable
-
-##### FedRamp Control Origination.
-
-- Service provider Corporate
-
-- Service provider System Specific
-
-- Service Provider Hybrid (Corporate and System Specific)
-
-- Configured by Customer (Customer System Specific)
-
-- Provided by Customer (Customer System Specific)
-
-- Shared (Service Provider and Customer Responsibility)
-
-- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
-
-#### What is the solution and how is it implemented?
-
-Add control implementation description here for control ac-2.1
-
-### AC-4(4) - Content Check Encrypted Information
-
-#### Control Statement
-
-The information system prevents encrypted information from bypassing content-checking mechanisms by blocking the flow of the encrypted information, ACME internal method.
-
-
-#### AC-4(4) Summary information
-
-
-| Parameter ID | Values | Label or Choices |
-|---|---|---|
-| ac-4.4_prm_1 | blocking the flow of the encrypted information, ACME internal method | Choose one or more: decrypting the information; blocking the flow of the encrypted information; terminating communications sessions attempting to pass encrypted information; ACME internal method |
-| ac-4.4_prm_2 | ACME internal method | organization-defined procedure or method |
-
-##### FedRamp Implementation Status.
-
-- Implemented
-
-- Partially implemented
-
-- Planned
-
-- Alternative implementation
-
-- Not Applicable
-
-##### FedRamp Control Origination.
-
-- Service provider Corporate
-
-- Service provider System Specific
-
-- Service Provider Hybrid (Corporate and System Specific)
-
-- Configured by Customer (Customer System Specific)
-
-- Provided by Customer (Customer System Specific)
-
-- Shared (Service Provider and Customer Responsibility)
-
-- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
-
-#### What is the solution and how is it implemented?
-
-Add control implementation description here for control ac-4.4
 
 ## Custom Controls  \(CC\)
 
@@ -312,37 +121,8 @@ All services should report energy consumed by their service.
 ####  Summary information
 
 
-##### FedRamp Implementation Status.
-
-- Implemented
-
-- Partially implemented
-
-- Planned
-
-- Alternative implementation
-
-- Not Applicable
-
-##### FedRamp Control Origination.
-
-- Service provider Corporate
-
-- Service provider System Specific
-
-- Service Provider Hybrid (Corporate and System Specific)
-
-- Configured by Customer (Customer System Specific)
-
-- Provided by Customer (Customer System Specific)
-
-- Shared (Service Provider and Customer Responsibility)
-
-- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
-
 #### What is the solution and how is it implemented?
 
-Add control implementation description here for control cc-1
 
 ### CC-2 - Carbon reporting
 
@@ -354,37 +134,64 @@ All services must calculate and report total scope 3 energy consumption.
 ####  Summary information
 
 
-##### FedRamp Implementation Status.
+#### What is the solution and how is it implemented?
 
-- Implemented
 
-- Partially implemented
+## Identification and Authentication  \(IA\)
 
-- Planned
 
-- Alternative implementation
+### IA-5(1) - Password-based Authentication
 
-- Not Applicable
+#### Control Statement
 
-##### FedRamp Control Origination.
+The information system, for password-based authentication:
 
-- Service provider Corporate
+- \[(a)\] Enforces minimum password complexity of blocking the flow of the encrypted information, ACME internal method;
 
-- Service provider System Specific
+- \[(b)\] Enforces at least the following number of changed characters when new passwords are created: ACME internal method;
 
-- Service Provider Hybrid (Corporate and System Specific)
+- \[(c)\] Stores and transmits only cryptographically-protected passwords;
 
-- Configured by Customer (Customer System Specific)
+- \[(d)\] Enforces password minimum and maximum lifetime restrictions of ACME improved method;
 
-- Provided by Customer (Customer System Specific)
+- \[(e)\] Prohibits password reuse for ACME final method generations; and
 
-- Shared (Service Provider and Customer Responsibility)
+- \[(f)\] Allows the use of a temporary password for system logons with an immediate change to a permanent password.
 
-- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
+
+#### IA-5(1) Summary information
+
+
+###### Table of Parameters
+
+| Parameter ID | Values | Label or Choices |
+|---|---|---|
+| ia-5.1_prm_1 | blocking the flow of the encrypted information, ACME internal method | organization-defined requirements for case sensitivity, number of characters, mix of upper-case letters, lower-case letters, numbers, and special characters, including minimum requirements for each type |
+| ia-5.1_prm_2 | ACME internal method | organization-defined number |
+| ia-5.1_prm_3 | ACME improved method | organization-defined numbers for lifetime minimum, lifetime maximum |
+| ia-5.1_prm_4 | ACME final method | organization-defined number |
 
 #### What is the solution and how is it implemented?
 
-Add control implementation description here for control cc-2
+
+### IA-5(4) - Automated Support for Password Strength Determination
+
+#### Control Statement
+
+The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy assistants.
+
+
+#### IA-5(4) Summary information
+
+
+###### Table of Parameters
+
+| Parameter ID | Values | Label or Choices |
+|---|---|---|
+| ia-5.4_prm_1 | assistants | organization-defined personnel or roles |
+
+#### What is the solution and how is it implemented?
+
 
 ## Privilege Rating  \(PR\)
 
@@ -407,51 +214,8 @@ Any service or offering MUST:
 ####  Summary information
 
 
-##### FedRamp Implementation Status.
-
-- Implemented
-
-- Partially implemented
-
-- Planned
-
-- Alternative implementation
-
-- Not Applicable
-
-##### FedRamp Control Origination.
-
-- Service provider Corporate
-
-- Service provider System Specific
-
-- Service Provider Hybrid (Corporate and System Specific)
-
-- Configured by Customer (Customer System Specific)
-
-- Provided by Customer (Customer System Specific)
-
-- Shared (Service Provider and Customer Responsibility)
-
-- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
-
 #### What is the solution and how is it implemented?
 
-##### Part a
-
-Add control implementation description here for item pr-1_smt.a
-
-##### Part b
-
-Add control implementation description here for item pr-1_smt.b
-
-##### Part c
-
-Add control implementation description here for item pr-1_smt.c
-
-##### Part d
-
-Add control implementation description here for item pr-1_smt.d
 
 ### PR-2 - Registering exemptions to right to delete
 
@@ -461,37 +225,8 @@ Add control implementation description here for item pr-1_smt.d
 ####  Summary information
 
 
-##### FedRamp Implementation Status.
-
-- Implemented
-
-- Partially implemented
-
-- Planned
-
-- Alternative implementation
-
-- Not Applicable
-
-##### FedRamp Control Origination.
-
-- Service provider Corporate
-
-- Service provider System Specific
-
-- Service Provider Hybrid (Corporate and System Specific)
-
-- Configured by Customer (Customer System Specific)
-
-- Provided by Customer (Customer System Specific)
-
-- Shared (Service Provider and Customer Responsibility)
-
-- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
-
 #### What is the solution and how is it implemented?
 
-Add control implementation description here for control pr-2
 
 ## System and Communications Protection  \(SC\)
 
@@ -502,7 +237,7 @@ Add control implementation description here for control pr-2
 
 The organization:
 
-- \[a.\] Develops, documents, and disseminates to assistants:
+- \[a.\] Develops, documents, and disseminates to as needed:
 
   - \[1.\] A system and communications protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
   - \[2.\] Procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls; and
@@ -516,49 +251,16 @@ The organization:
 #### SC-1 Summary information
 
 
+###### Table of Parameters
+
 | Parameter ID | Values | Label or Choices |
 |---|---|---|
-| sc-1_prm_1 | assistants | organization-defined personnel or roles |
+| sc-1_prm_1 | as needed | organization-defined personnel or roles |
 | sc-1_prm_2 | hourly | organization-defined frequency |
 | sc-1_prm_3 | bi-monthly | organization-defined frequency |
 
-##### FedRamp Implementation Status.
-
-- Implemented
-
-- Partially implemented
-
-- Planned
-
-- Alternative implementation
-
-- Not Applicable
-
-##### FedRamp Control Origination.
-
-- Service provider Corporate
-
-- Service provider System Specific
-
-- Service Provider Hybrid (Corporate and System Specific)
-
-- Configured by Customer (Customer System Specific)
-
-- Provided by Customer (Customer System Specific)
-
-- Shared (Service Provider and Customer Responsibility)
-
-- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
-
 #### What is the solution and how is it implemented?
 
-##### Part a.
-
-Add control implementation description here for item sc-1_smt.a
-
-##### Part b.
-
-Add control implementation description here for item sc-1_smt.b
 
 ### SC-2 - Application Partitioning
 
@@ -570,34 +272,4 @@ The information system separates user functionality (including user interface se
 #### SC-2 Summary information
 
 
-##### FedRamp Implementation Status.
-
-- Implemented
-
-- Partially implemented
-
-- Planned
-
-- Alternative implementation
-
-- Not Applicable
-
-##### FedRamp Control Origination.
-
-- Service provider Corporate
-
-- Service provider System Specific
-
-- Service Provider Hybrid (Corporate and System Specific)
-
-- Configured by Customer (Customer System Specific)
-
-- Provided by Customer (Customer System Specific)
-
-- Shared (Service Provider and Customer Responsibility)
-
-- Inherited from pre-existing FedRAMP Authorization [Enter text here], Date of Authorization
-
 #### What is the solution and how is it implemented?
-
-Add control implementation description here for control sc-2

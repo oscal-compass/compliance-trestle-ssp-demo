@@ -28,9 +28,9 @@ get_fedramp_control_tables().
 {{ ssp_md_writer.get_control_statement(control.id, 2) }}
 
 #### {{ control_interface.get_label(control) }} Summary information
-{{ ssp_md_writer.get_fedramp_control_tables(control.id, 4, true) }}
+{{ ssp_md_writer.get_fedramp_control_tables(control.id, 2, true) }}
 
 #### What is the solution and how is it implemented?
-{{ ssp_md_writer.get_control_response(control.id, 4)}}
+{{ ssp_md_writer.get_control_response(control.id, 3, true)}}
 {% endfor %}
 {% endfor %}

@@ -45,7 +45,7 @@ The organization:
 #### AC-1 Summary information
 
 
-###### Table of Parameters
+#### Table of Parameters
 
 | Parameter ID | Values | Label or Choices |
 |---|---|---|
@@ -54,6 +54,10 @@ The organization:
 | ac-1_prm_3 | weekly | organization-defined frequency |
 
 #### What is the solution and how is it implemented?
+
+#### Component: This System
+
+##### Implementation Status: planned
 
 
 ### AC-2 - Account Management
@@ -96,7 +100,7 @@ The organization:
 #### AC-2 Summary information
 
 
-###### Table of Parameters
+#### Table of Parameters
 
 | Parameter ID | Values | Label or Choices |
 |---|---|---|
@@ -106,6 +110,16 @@ The organization:
 | ac-2_prm_4 | daily | organization-defined frequency |
 
 #### What is the solution and how is it implemented?
+
+#### Implementation for part d.
+
+#### Component: DB
+
+##### Rules:
+
+  - db_authorized_users_only
+
+##### Implementation Status: planned
 
 
 ## Custom Controls  \(CC\)
@@ -123,6 +137,27 @@ All services should report energy consumed by their service.
 
 #### What is the solution and how is it implemented?
 
+#### Component: IDSERVICE
+
+##### Rules:
+
+  - idservice_password_min_length
+  - idservice_strong_pass_enabled
+
+##### Implementation Status: planned
+
+#### Component: DB
+
+##### Rules:
+
+  - db_password_min_length
+
+##### Implementation Status: planned
+
+#### Component: This System
+
+##### Implementation Status: planned
+
 
 ### CC-2 - Carbon reporting
 
@@ -135,6 +170,18 @@ All services must calculate and report total scope 3 energy consumption.
 
 
 #### What is the solution and how is it implemented?
+
+#### Component: IDSERVICE
+
+##### Rules:
+
+  - idservice_password_min_length
+
+##### Implementation Status: planned
+
+#### Component: This System
+
+##### Implementation Status: planned
 
 
 ## Identification and Authentication  \(IA\)
@@ -162,7 +209,7 @@ The information system, for password-based authentication:
 #### IA-5(1) Summary information
 
 
-###### Table of Parameters
+#### Table of Parameters
 
 | Parameter ID | Values | Label or Choices |
 |---|---|---|
@@ -172,6 +219,43 @@ The information system, for password-based authentication:
 | ia-5.1_prm_4 | ACME final method | organization-defined number |
 
 #### What is the solution and how is it implemented?
+
+#### Implementation for part (a)
+
+#### Component: IDSERVICE
+
+##### Rules:
+
+  - idservice_password_min_length
+  - idservice_strong_pass_enabled
+
+##### Implementation Status: planned
+
+#### Component: DB
+
+##### Rules:
+
+  - db_password_min_length
+
+##### Implementation Status: planned
+
+#### Implementation for part (e)
+
+#### Component: IDSERVICE
+
+##### Rules:
+
+  - idservice_password_not_reuse_min_count
+
+##### Implementation Status: planned
+
+#### Component: DB
+
+##### Rules:
+
+  - db_password_not_reuse_min_count
+
+##### Implementation Status: planned
 
 
 ### IA-5(4) - Automated Support for Password Strength Determination
@@ -184,13 +268,34 @@ The organization employs automated tools to determine if password authenticators
 #### IA-5(4) Summary information
 
 
-###### Table of Parameters
+#### Table of Parameters
 
 | Parameter ID | Values | Label or Choices |
 |---|---|---|
 | ia-5.4_prm_1 | assistants | organization-defined personnel or roles |
 
 #### What is the solution and how is it implemented?
+
+#### Component: IDSERVICE
+
+##### Rules:
+
+  - idservice_password_min_length
+  - idservice_strong_pass_enabled
+
+##### Implementation Status: planned
+
+#### Component: DB
+
+##### Rules:
+
+  - db_password_min_length
+
+##### Implementation Status: planned
+
+#### Component: This System
+
+##### Implementation Status: planned
 
 
 ## Privilege Rating  \(PR\)
@@ -216,6 +321,26 @@ Any service or offering MUST:
 
 #### What is the solution and how is it implemented?
 
+#### Component: IDSERVICE
+
+##### Rules:
+
+  - idservice_password_min_length
+
+##### Implementation Status: planned
+
+#### Component: DB
+
+##### Rules:
+
+  - db_password_not_reuse_min_count
+
+##### Implementation Status: planned
+
+#### Component: This System
+
+##### Implementation Status: planned
+
 
 ### PR-2 - Registering exemptions to right to delete
 
@@ -226,6 +351,27 @@ Any service or offering MUST:
 
 
 #### What is the solution and how is it implemented?
+
+#### Component: IDSERVICE
+
+##### Rules:
+
+  - idservice_password_not_reuse_min_count
+
+##### Implementation Status: planned
+
+#### Component: DB
+
+##### Rules:
+
+  - db_password_min_length
+  - db_password_not_reuse_min_count
+
+##### Implementation Status: planned
+
+#### Component: This System
+
+##### Implementation Status: planned
 
 
 ## System and Communications Protection  \(SC\)
@@ -251,7 +397,7 @@ The organization:
 #### SC-1 Summary information
 
 
-###### Table of Parameters
+#### Table of Parameters
 
 | Parameter ID | Values | Label or Choices |
 |---|---|---|
@@ -260,6 +406,18 @@ The organization:
 | sc-1_prm_3 | bi-monthly | organization-defined frequency |
 
 #### What is the solution and how is it implemented?
+
+#### Component: IDSERVICE
+
+##### Rules:
+
+  - idservice_password_not_reuse_min_count
+
+##### Implementation Status: planned
+
+#### Component: This System
+
+##### Implementation Status: planned
 
 
 ### SC-2 - Application Partitioning
@@ -273,3 +431,15 @@ The information system separates user functionality (including user interface se
 
 
 #### What is the solution and how is it implemented?
+
+#### Component: DB
+
+##### Rules:
+
+  - db_password_not_reuse_min_count
+
+##### Implementation Status: planned
+
+#### Component: This System
+
+##### Implementation Status: planned

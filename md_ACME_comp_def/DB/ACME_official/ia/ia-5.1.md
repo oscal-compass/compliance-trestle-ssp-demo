@@ -28,15 +28,15 @@ x-trestle-global:
 
 The information system, for password-based authentication:
 
-- \[(a)\] Enforces minimum password complexity of blocking the flow of the encrypted information, ACME internal method;
+- \[(a)\] Enforces minimum password complexity of {{ insert: param, ia-5.1_prm_1 }};
 
-- \[(b)\] Enforces at least the following number of changed characters when new passwords are created: ACME internal method;
+- \[(b)\] Enforces at least the following number of changed characters when new passwords are created: {{ insert: param, ia-5.1_prm_2 }};
 
 - \[(c)\] Stores and transmits only cryptographically-protected passwords;
 
-- \[(d)\] Enforces password minimum and maximum lifetime restrictions of ACME improved method;
+- \[(d)\] Enforces password minimum and maximum lifetime restrictions of {{ insert: param, ia-5.1_prm_3 }};
 
-- \[(e)\] Prohibits password reuse for ACME final method generations; and
+- \[(e)\] Prohibits password reuse for {{ insert: param, ia-5.1_prm_4 }} generations; and
 
 - \[(f)\] Allows the use of a temporary password for system logons with an immediate change to a permanent password.
 

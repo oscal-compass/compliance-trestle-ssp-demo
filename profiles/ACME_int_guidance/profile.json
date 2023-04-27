@@ -20,7 +20,47 @@
       "as-is": true
     },
     "modify": {
-      "alters": []
+      "set_parameters": [
+        {
+          "param_id": "ac-1_prm_1",
+            "values": [
+              "all personnel"
+            ],
+            "props": [
+              {
+                "name": "display-name",
+                "value": "AC-1 Personnel",
+                "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal"
+              }
+            ]
+        },
+        {
+          "param_id": "ac-1_prm_2",
+            "values": [
+              "monthly"
+            ],
+            "props": [
+              {
+                "name": "display-name",
+                "value": "AC-1 Policy Frequency",
+                "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal"
+              }
+            ]
+        },
+        {
+          "param_id": "ac-1_prm_3",
+            "values": [
+              "weekly"
+            ],
+            "props": [
+              {
+                "name": "display-name",
+                "value": "AC-1 Procedures Frequency",
+                "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal"
+              }
+            ]
+        }
+      ]
     }
   }
 }

@@ -16,9 +16,6 @@ x-trestle-set-params:
       - privileged
     values:
   ac-2_prm_2:
-    label: organization-defined personnel or roles
-    profile-values:
-      - ACME interal method
     values:
   ac-2_prm_3:
     label: organization-defined procedures or conditions

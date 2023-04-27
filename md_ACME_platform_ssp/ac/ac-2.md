@@ -19,7 +19,6 @@ x-trestle-set-params:
       - privileged
   ac-2_prm_2:
     values:
-      - ACME interal method
   ac-2_prm_3:
     values:
       - standard operations
@@ -72,7 +71,7 @@ The organization:
 
 - \[d.\] Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;
 
-- \[e.\] Requires approvals by [ACME interal method] for requests to create information system accounts;
+- \[e.\] Requires approvals by [organization-defined personnel or roles] for requests to create information system accounts;
 
 - \[f.\] Creates, enables, modifies, disables, and removes information system accounts in accordance with [standard operations];
 
@@ -176,9 +175,9 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-2 -->
+Implement properly for This System component.
 
-#### Implementation Status: planned
+#### Implementation Status: implemented
 
 ______________________________________________________________________
 
@@ -186,12 +185,12 @@ ______________________________________________________________________
 
 ### DB
 
-<!-- Add control implementation description here for item d. -->
+Implement well for component DB and part d.
 
 #### Rules:
 
   - db_authorized_users_only
 
-#### Implementation Status: planned
+#### Implementation Status: partial
 
 ______________________________________________________________________

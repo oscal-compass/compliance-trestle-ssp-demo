@@ -45,13 +45,6 @@
           ]
         },
         {
-          "param-id": "ac-1_prm_2",
-          "label": "organization-defined frequency",
-          "values": [
-            "monthly"
-          ]
-        },
-        {
           "param-id": "ac-1_prm_3",
           "label": "organization-defined frequency",
           "values": [
@@ -63,13 +56,6 @@
           "label": "organization-defined information system account types",
           "values": [
             "privileged"
-          ]
-        },
-        {
-          "param-id": "ac-2_prm_2",
-          "label": "organization-defined personnel or roles",
-          "values": [
-            "ACME interal method"
           ]
         },
         {

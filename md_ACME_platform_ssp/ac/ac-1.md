@@ -12,13 +12,16 @@ x-trestle-set-params:
   #
   ac-1_prm_1:
     values:
-      - executives
+      - all personnel
+    display-name: AC-1 Personnel
   ac-1_prm_2:
     values:
       - monthly
+    display-name: AC-1 Policy Frequency
   ac-1_prm_3:
     values:
       - weekly
+    display-name: AC-1 Procedures Frequency
 x-trestle-evidence:
   named-evidence: location
 x-trestle-dependent-on:
@@ -57,7 +60,7 @@ x-trestle-global:
 
 The organization:
 
-- \[a.\] Develops, documents, and disseminates to [executives]:
+- \[a.\] Develops, documents, and disseminates to [all personnel]:
 
   - \[1.\] An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
   - \[2.\] Procedures to facilitate the implementation of the access control policy and associated access controls; and

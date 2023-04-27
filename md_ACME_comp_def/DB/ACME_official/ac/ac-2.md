@@ -7,7 +7,6 @@ x-trestle-param-values:
   ac-2_prm_1:
     - privileged
   ac-2_prm_2:
-    - ACME interal method
   ac-2_prm_3:
     - standard operations
   ac-2_prm_4:
@@ -25,7 +24,7 @@ x-trestle-global:
 
 The organization:
 
-- \[a.\] Identifies and selects the following types of information system accounts to support organizational missions/business functions: privileged;
+- \[a.\] Identifies and selects the following types of information system accounts to support organizational missions/business functions: {{ insert: param, ac-2_prm_1 }};
 
 - \[b.\] Assigns account managers for information system accounts;
 
@@ -33,9 +32,9 @@ The organization:
 
 - \[d.\] Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;
 
-- \[e.\] Requires approvals by ACME interal method for requests to create information system accounts;
+- \[e.\] Requires approvals by {{ insert: param, ac-2_prm_2 }} for requests to create information system accounts;
 
-- \[f.\] Creates, enables, modifies, disables, and removes information system accounts in accordance with standard operations;
+- \[f.\] Creates, enables, modifies, disables, and removes information system accounts in accordance with {{ insert: param, ac-2_prm_3 }};
 
 - \[g.\] Monitors the use of information system accounts;
 
@@ -51,7 +50,7 @@ The organization:
   - \[2.\] Intended system usage; and
   - \[3.\] Other attributes as required by the organization or associated missions/business functions;
 
-- \[j.\] Reviews accounts for compliance with account management requirements daily; and
+- \[j.\] Reviews accounts for compliance with account management requirements {{ insert: param, ac-2_prm_4 }}; and
 
 - \[k.\] Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
 

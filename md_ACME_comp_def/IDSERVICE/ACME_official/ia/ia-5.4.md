@@ -20,7 +20,7 @@ x-trestle-global:
 
 ## Control Statement
 
-The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy assistants.
+The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy {{ insert: param, ia-5.4_prm_1 }}.
 
 ## Control Objective
 

@@ -31,15 +31,15 @@ get_fedramp_control_tables().
 
 The organization:
 
-- \[a.\] Develops, documents, and disseminates to executives:
+- \[a.\] Develops, documents, and disseminates to [ACME Assigned: all personnel]:
 
   - \[1.\] An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
   - \[2.\] Procedures to facilitate the implementation of the access control policy and associated access controls; and
 
 - \[b.\] Reviews and updates the current:
 
-  - \[1.\] Access control policy monthly; and
-  - \[2.\] Access control procedures weekly.
+  - \[1.\] Access control policy [ACME Assigned: monthly]; and
+  - \[2.\] Access control procedures [ACME Assigned: weekly].
 
 
 #### AC-1 Summary information
@@ -49,9 +49,9 @@ The organization:
 
 | Parameter ID | Values | Label or Choices |
 |---|---|---|
-| ac-1_prm_1 | executives | organization-defined personnel or roles |
-| ac-1_prm_2 | monthly | organization-defined frequency |
-| ac-1_prm_3 | weekly | organization-defined frequency |
+| AC-1 Personnel | all personnel | organization-defined personnel or roles |
+| AC-1 Policy Frequency | monthly | organization-defined frequency |
+| AC-1 Procedures Frequency | weekly | organization-defined frequency |
 
 #### What is the solution and how is it implemented?
 
@@ -66,7 +66,7 @@ The organization:
 
 The organization:
 
-- \[a.\] Identifies and selects the following types of information system accounts to support organizational missions/business functions: privileged;
+- \[a.\] Identifies and selects the following types of information system accounts to support organizational missions/business functions: [ACME Assigned: privileged];
 
 - \[b.\] Assigns account managers for information system accounts;
 
@@ -74,9 +74,9 @@ The organization:
 
 - \[d.\] Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;
 
-- \[e.\] Requires approvals by ACME interal method for requests to create information system accounts;
+- \[e.\] Requires approvals by [organization-defined personnel or roles] for requests to create information system accounts;
 
-- \[f.\] Creates, enables, modifies, disables, and removes information system accounts in accordance with standard operations;
+- \[f.\] Creates, enables, modifies, disables, and removes information system accounts in accordance with [ACME Assigned: standard operations];
 
 - \[g.\] Monitors the use of information system accounts;
 
@@ -92,7 +92,7 @@ The organization:
   - \[2.\] Intended system usage; and
   - \[3.\] Other attributes as required by the organization or associated missions/business functions;
 
-- \[j.\] Reviews accounts for compliance with account management requirements daily; and
+- \[j.\] Reviews accounts for compliance with account management requirements [ACME Assigned: daily]; and
 
 - \[k.\] Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
 
@@ -105,21 +105,25 @@ The organization:
 | Parameter ID | Values | Label or Choices |
 |---|---|---|
 | ac-2_prm_1 | privileged | organization-defined information system account types |
-| ac-2_prm_2 | ACME interal method | organization-defined personnel or roles |
+| ac-2_prm_2 |  | organization-defined personnel or roles |
 | ac-2_prm_3 | standard operations | organization-defined procedures or conditions |
 | ac-2_prm_4 | daily | organization-defined frequency |
 
 #### What is the solution and how is it implemented?
 
+#### Component: This System
+
+Implement properly for This System component.
+
+##### Implementation Status: implemented
+
 #### Implementation for part d.
 
 #### Component: DB
 
-##### Rules:
+Implement well for component DB and part d.
 
-  - db_authorized_users_only
-
-##### Implementation Status: planned
+##### Implementation Status: partial
 
 
 ## Custom Controls  \(CC\)
@@ -137,24 +141,15 @@ All services should report energy consumed by their service.
 
 #### What is the solution and how is it implemented?
 
+#### Component: This System
+
+##### Implementation Status: planned
+
 #### Component: IDSERVICE
-
-##### Rules:
-
-  - idservice_password_min_length
-  - idservice_strong_pass_enabled
 
 ##### Implementation Status: planned
 
 #### Component: DB
-
-##### Rules:
-
-  - db_password_min_length
-
-##### Implementation Status: planned
-
-#### Component: This System
 
 ##### Implementation Status: planned
 
@@ -171,15 +166,11 @@ All services must calculate and report total scope 3 energy consumption.
 
 #### What is the solution and how is it implemented?
 
-#### Component: IDSERVICE
-
-##### Rules:
-
-  - idservice_password_min_length
+#### Component: This System
 
 ##### Implementation Status: planned
 
-#### Component: This System
+#### Component: IDSERVICE
 
 ##### Implementation Status: planned
 
@@ -193,15 +184,15 @@ All services must calculate and report total scope 3 energy consumption.
 
 The information system, for password-based authentication:
 
-- \[(a)\] Enforces minimum password complexity of blocking the flow of the encrypted information, ACME internal method;
+- \[(a)\] Enforces minimum password complexity of [ACME Assigned: blocking the flow of the encrypted information, ACME internal method];
 
-- \[(b)\] Enforces at least the following number of changed characters when new passwords are created: ACME internal method;
+- \[(b)\] Enforces at least the following number of changed characters when new passwords are created: [ACME Assigned: ACME internal method];
 
 - \[(c)\] Stores and transmits only cryptographically-protected passwords;
 
-- \[(d)\] Enforces password minimum and maximum lifetime restrictions of ACME improved method;
+- \[(d)\] Enforces password minimum and maximum lifetime restrictions of [ACME Assigned: ACME improved method];
 
-- \[(e)\] Prohibits password reuse for ACME final method generations; and
+- \[(e)\] Prohibits password reuse for [ACME Assigned: ACME final method] generations; and
 
 - \[(f)\] Allows the use of a temporary password for system logons with an immediate change to a permanent password.
 
@@ -220,22 +211,17 @@ The information system, for password-based authentication:
 
 #### What is the solution and how is it implemented?
 
+#### Component: This System
+
+##### Implementation Status: planned
+
 #### Implementation for part (a)
 
 #### Component: IDSERVICE
 
-##### Rules:
-
-  - idservice_password_min_length
-  - idservice_strong_pass_enabled
-
 ##### Implementation Status: planned
 
 #### Component: DB
-
-##### Rules:
-
-  - db_password_min_length
 
 ##### Implementation Status: planned
 
@@ -243,17 +229,9 @@ The information system, for password-based authentication:
 
 #### Component: IDSERVICE
 
-##### Rules:
-
-  - idservice_password_not_reuse_min_count
-
 ##### Implementation Status: planned
 
 #### Component: DB
-
-##### Rules:
-
-  - db_password_not_reuse_min_count
 
 ##### Implementation Status: planned
 
@@ -262,7 +240,7 @@ The information system, for password-based authentication:
 
 #### Control Statement
 
-The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy assistants.
+The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy [ACME Assigned: assistants].
 
 
 #### IA-5(4) Summary information
@@ -276,24 +254,15 @@ The organization employs automated tools to determine if password authenticators
 
 #### What is the solution and how is it implemented?
 
+#### Component: This System
+
+##### Implementation Status: planned
+
 #### Component: IDSERVICE
-
-##### Rules:
-
-  - idservice_password_min_length
-  - idservice_strong_pass_enabled
 
 ##### Implementation Status: planned
 
 #### Component: DB
-
-##### Rules:
-
-  - db_password_min_length
-
-##### Implementation Status: planned
-
-#### Component: This System
 
 ##### Implementation Status: planned
 
@@ -321,23 +290,15 @@ Any service or offering MUST:
 
 #### What is the solution and how is it implemented?
 
+#### Component: This System
+
+##### Implementation Status: planned
+
 #### Component: IDSERVICE
-
-##### Rules:
-
-  - idservice_password_min_length
 
 ##### Implementation Status: planned
 
 #### Component: DB
-
-##### Rules:
-
-  - db_password_not_reuse_min_count
-
-##### Implementation Status: planned
-
-#### Component: This System
 
 ##### Implementation Status: planned
 
@@ -352,24 +313,15 @@ Any service or offering MUST:
 
 #### What is the solution and how is it implemented?
 
+#### Component: This System
+
+##### Implementation Status: planned
+
 #### Component: IDSERVICE
-
-##### Rules:
-
-  - idservice_password_not_reuse_min_count
 
 ##### Implementation Status: planned
 
 #### Component: DB
-
-##### Rules:
-
-  - db_password_min_length
-  - db_password_not_reuse_min_count
-
-##### Implementation Status: planned
-
-#### Component: This System
 
 ##### Implementation Status: planned
 
@@ -383,15 +335,15 @@ Any service or offering MUST:
 
 The organization:
 
-- \[a.\] Develops, documents, and disseminates to as needed:
+- \[a.\] Develops, documents, and disseminates to [ACME Assigned: as needed]:
 
   - \[1.\] A system and communications protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
   - \[2.\] Procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls; and
 
 - \[b.\] Reviews and updates the current:
 
-  - \[1.\] System and communications protection policy hourly; and
-  - \[2.\] System and communications protection procedures bi-monthly.
+  - \[1.\] System and communications protection policy [ACME Assigned: hourly]; and
+  - \[2.\] System and communications protection procedures [ACME Assigned: bi-monthly].
 
 
 #### SC-1 Summary information
@@ -407,15 +359,11 @@ The organization:
 
 #### What is the solution and how is it implemented?
 
-#### Component: IDSERVICE
-
-##### Rules:
-
-  - idservice_password_not_reuse_min_count
+#### Component: This System
 
 ##### Implementation Status: planned
 
-#### Component: This System
+#### Component: IDSERVICE
 
 ##### Implementation Status: planned
 
@@ -432,14 +380,10 @@ The information system separates user functionality (including user interface se
 
 #### What is the solution and how is it implemented?
 
-#### Component: DB
-
-##### Rules:
-
-  - db_password_not_reuse_min_count
+#### Component: This System
 
 ##### Implementation Status: planned
 
-#### Component: This System
+#### Component: DB
 
 ##### Implementation Status: planned

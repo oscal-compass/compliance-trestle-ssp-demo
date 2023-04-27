@@ -74,7 +74,7 @@ The organization:
 
 - \[d.\] Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;
 
-- \[e.\] Requires approvals by [organization-defined personnel or roles] for requests to create information system accounts;
+- \[e.\] Requires approvals by [Assignment: organization-defined personnel or roles] for requests to create information system accounts;
 
 - \[f.\] Creates, enables, modifies, disables, and removes information system accounts in accordance with [ACME Assigned: standard operations];
 

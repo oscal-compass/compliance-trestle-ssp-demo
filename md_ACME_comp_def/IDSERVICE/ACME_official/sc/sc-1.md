@@ -23,15 +23,15 @@ x-trestle-global:
 
 The organization:
 
-- \[a.\] Develops, documents, and disseminates to as needed:
+- \[a.\] Develops, documents, and disseminates to {{ insert: param, sc-1_prm_1 }}:
 
   - \[1.\] A system and communications protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
   - \[2.\] Procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls; and
 
 - \[b.\] Reviews and updates the current:
 
-  - \[1.\] System and communications protection policy hourly; and
-  - \[2.\] System and communications protection procedures bi-monthly.
+  - \[1.\] System and communications protection policy {{ insert: param, sc-1_prm_2 }}; and
+  - \[2.\] System and communications protection procedures {{ insert: param, sc-1_prm_3 }}.
 
 ## Control Objective
 

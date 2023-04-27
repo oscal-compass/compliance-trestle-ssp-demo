@@ -11,14 +11,22 @@ x-trestle-set-params:
   # in SetParameters of the Profile.
   #
   ac-1_prm_1:
+    profile-values:
+      - all personnel
     values:
       - executives
+    display-name: AC-1 Personnel
   ac-1_prm_2:
-    values:
+    profile-values:
       - monthly
+    values:
+    display-name: AC-1 Policy Frequency
   ac-1_prm_3:
+    profile-values:
+      - weekly
     values:
       - weekly
+    display-name: AC-1 Procedures Frequency
 x-trestle-global:
   profile:
     title: ACME Inc. internal controls profile.

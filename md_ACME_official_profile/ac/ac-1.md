@@ -16,9 +16,6 @@ x-trestle-set-params:
       - executives
     values:
   ac-1_prm_2:
-    label: organization-defined frequency
-    profile-values:
-      - monthly
     values:
   ac-1_prm_3:
     label: organization-defined frequency

@@ -35,9 +35,10 @@ initialize-markdown: create-comp-def
 	trestle author profile-generate --name ACME_int_guidance --output md_ACME_internal_guidance_profile -y assets/extra-ssp-metadata.yml
 	trestle author component-generate --name ACME_comp_def --output md_ACME_comp_def
 	trestle author ssp-generate -cd ACME_comp_def --profile ACME_int_guidance --output md_ACME_platform_ssp -y assets/extra-ssp-metadata.yml
+	python -m insert_response_prose
 
 ssp-markdown: update-markdown
-	trestle author jinja -i ACME_platform_ssp.md.jinja -ssp ACME_SSP -p ACME_int_guidance -o ACME_platform_ssp.md
+	trestle author jinja -i ACME_platform_ssp.md.jinja -ssp ACME_SSP -p ACME_int_guidance -o ACME_platform_ssp.md -bf "[.]" -vap "ACME Assigned:"
 
 ssp-word: ssp-markdown
 	pandoc ACME_platform_ssp.md --from markdown+table_captions+implicit_figures+rebase_relative_paths -t docx --reference-doc ssp_word_template.docx -s --toc -o ACME_platform_ssp.docx

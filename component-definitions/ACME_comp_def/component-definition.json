@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "f6a02b62-61f1-4445-a999-96e0cea9de0f",
+    "uuid": "70a2c60a-be64-403d-b586-d74b48e627f1",
     "metadata": {
       "title": "Demo component definition",
-      "last-modified": "2023-04-27T13:12:47.669760+10:00",
+      "last-modified": "2023-04-27T15:44:06.905656+10:00",
       "version": "1.0",
       "oscal-version": "1.0.4"
     },
     "components": [
       {
-        "uuid": "cd009e85-a181-4bda-b352-a7e45934c515",
+        "uuid": "4e19131e-b361-4f0e-8262-02bf4456202e",
         "type": "service",
         "title": "IDSERVICE",
         "description": "IDSERVICE",
@@ -89,7 +89,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "25388dcd-08bf-4902-95af-c6e5084fd4fd",
+            "uuid": "1de0e05a-1deb-47ad-9a58-5476a0d3da19",
             "source": "trestle://profiles/ACME_official/profile.json",
             "description": "ACME Official Profile",
             "set-parameters": [
@@ -108,7 +108,7 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "5cf8037f-8dde-4cc5-bddf-c7d9679b7353",
+                "uuid": "4387d139-7b43-49ab-8151-839729616c6f",
                 "control-id": "ia-5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -120,7 +120,7 @@
                 "statements": [
                   {
                     "statement-id": "ia-5.1_smt.a",
-                    "uuid": "3e182154-ce89-44a4-8baf-1af6651db62f",
+                    "uuid": "06d8a905-5c21-4ae7-a274-eb4d84ed4a92",
                     "description": "",
                     "props": [
                       {
@@ -141,7 +141,7 @@
                   },
                   {
                     "statement-id": "ia-5.1_smt.e",
-                    "uuid": "f50e0872-7960-4925-a33f-56c2f20dd699",
+                    "uuid": "eea18ea6-2a65-47fe-b66a-334f493ad25b",
                     "description": "",
                     "props": [
                       {
@@ -158,7 +158,7 @@
                 ]
               },
               {
-                "uuid": "eb262e8b-9e99-4fa9-974a-01b30508102a",
+                "uuid": "083b8622-9ae9-4ec2-9532-e627277ba073",
                 "control-id": "ia-5.4",
                 "description": "",
                 "props": [
@@ -179,7 +179,7 @@
                 ]
               },
               {
-                "uuid": "6e9c227f-e8af-4f04-8a06-7f34de475e29",
+                "uuid": "549bf6cb-671a-4343-bfb8-5b601451daf9",
                 "control-id": "cc-1",
                 "description": "",
                 "props": [
@@ -200,7 +200,7 @@
                 ]
               },
               {
-                "uuid": "27780884-0c36-46eb-aefd-a2c28e2f4527",
+                "uuid": "a3e402eb-0557-463f-a8d9-6ed35172ddaf",
                 "control-id": "cc-2",
                 "description": "",
                 "props": [
@@ -216,7 +216,7 @@
                 ]
               },
               {
-                "uuid": "cdc0bb79-4096-4b89-b321-ed9e2911dd24",
+                "uuid": "005bfc9c-b0e3-435f-bc45-84e548b80f8e",
                 "control-id": "pr-1",
                 "description": "",
                 "props": [
@@ -232,7 +232,7 @@
                 ]
               },
               {
-                "uuid": "409a538d-4f20-4652-8b67-a1e9109a5594",
+                "uuid": "4a60d015-0aa6-4c0f-b646-e6f5383c37ad",
                 "control-id": "pr-2",
                 "description": "",
                 "props": [
@@ -248,7 +248,7 @@
                 ]
               },
               {
-                "uuid": "80d37602-d87c-44d3-a39c-13859ed10e93",
+                "uuid": "ae71e3af-6fe4-4dc3-8399-588b51798587",
                 "control-id": "sc-1",
                 "description": "",
                 "props": [
@@ -268,7 +268,7 @@
         ]
       },
       {
-        "uuid": "7593b2e1-7f6a-4e5a-9a55-048badb668fc",
+        "uuid": "c646a995-9dc7-46e5-8d89-6b8fd71cb8b5",
         "type": "service",
         "title": "DB",
         "description": "DB",
@@ -348,7 +348,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "bfda3b37-39a0-4fdc-9aa2-ff8cc905edb6",
+            "uuid": "a7df6b70-bc85-4437-8e35-bfbffab79fe0",
             "source": "trestle://profiles/ACME_official/profile.json",
             "description": "ACME Official Profile",
             "set-parameters": [
@@ -367,7 +367,7 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "00e8cd95-b1b7-43c6-9ff8-225ebcbaf919",
+                "uuid": "59862988-ce24-48d2-846f-5eb71e63b874",
                 "control-id": "ia-5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -379,7 +379,7 @@
                 "statements": [
                   {
                     "statement-id": "ia-5.1_smt.a",
-                    "uuid": "ab2c8521-30f2-4286-b16e-82cddc2bb5b9",
+                    "uuid": "def43332-9221-4675-a14a-82564f60581d",
                     "description": "",
                     "props": [
                       {
@@ -395,7 +395,7 @@
                   },
                   {
                     "statement-id": "ia-5.1_smt.e",
-                    "uuid": "9da73bc4-4ec8-4648-b4f2-3a5eecc2a521",
+                    "uuid": "0f94a49e-f82b-4d54-90a5-75e532a10cbf",
                     "description": "",
                     "props": [
                       {
@@ -412,7 +412,7 @@
                 ]
               },
               {
-                "uuid": "23cf72ab-25c7-45c3-bce4-a50f6f13f4e2",
+                "uuid": "4d64d178-2483-4654-bcb6-f242fb3217c3",
                 "control-id": "ia-5.4",
                 "description": "",
                 "props": [
@@ -428,7 +428,7 @@
                 ]
               },
               {
-                "uuid": "b0aa703d-fbd6-4d37-b53d-11618cf28779",
+                "uuid": "5505f2f4-b52f-4f49-9264-e2d6d8d1d979",
                 "control-id": "cc-1",
                 "description": "",
                 "props": [
@@ -444,7 +444,7 @@
                 ]
               },
               {
-                "uuid": "7079e8b3-e5c1-4d28-a396-38534270db22",
+                "uuid": "ba2517b4-9ddc-45b8-9628-2b6563cfc254",
                 "control-id": "pr-2",
                 "description": "",
                 "props": [
@@ -465,7 +465,7 @@
                 ]
               },
               {
-                "uuid": "a320649d-3bcc-42a5-b588-db7efeec8f6c",
+                "uuid": "de2c5ab4-c415-4b05-856f-abb9591f970e",
                 "control-id": "pr-1",
                 "description": "",
                 "props": [
@@ -481,7 +481,7 @@
                 ]
               },
               {
-                "uuid": "7d9dd241-e9c0-406a-9fa9-2d9712a272c1",
+                "uuid": "9fe5dd88-077b-4abf-b3fd-406d0076ef58",
                 "control-id": "sc-2",
                 "description": "",
                 "props": [
@@ -497,7 +497,7 @@
                 ]
               },
               {
-                "uuid": "1832110c-1a8c-42b0-b208-1f832a1d6066",
+                "uuid": "450ffcef-acb4-4792-af1d-32f2cb646d08",
                 "control-id": "ac-2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -509,7 +509,7 @@
                 "statements": [
                   {
                     "statement-id": "ac-2_smt.d",
-                    "uuid": "eef291ae-d4d8-4cac-addb-ee8a68caa1ff",
+                    "uuid": "1e65c1ef-c82c-4aa7-b4d3-d07075719381",
                     "description": "",
                     "props": [
                       {

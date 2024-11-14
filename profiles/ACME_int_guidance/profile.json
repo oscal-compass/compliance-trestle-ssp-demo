@@ -9,7 +9,7 @@
     },
     "imports": [
       {
-        "href": "trestle://profiles/ACME_Official/profile.json",
+        "href": "trestle://profiles/ACME_official/profile.json",
         "include-all": {}
       }
     ],

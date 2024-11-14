@@ -25,7 +25,7 @@
         <mxCell id="p-FMet9S-FCSw5p0kF5i-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="p-FMet9S-FCSw5p0kF5i-9" target="p-FMet9S-FCSw5p0kF5i-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="p-FMet9S-FCSw5p0kF5i-9" value="profiles/ACME_Official/profile.json" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;" parent="1" vertex="1">
+        <mxCell id="p-FMet9S-FCSw5p0kF5i-9" value="profiles/ACME_official/profile.json" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;" parent="1" vertex="1">
           <mxGeometry x="-1130" y="290" width="210" height="70" as="geometry" />
         </mxCell>
         <mxCell id="p-FMet9S-FCSw5p0kF5i-10" value="ACME_custom_controls" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">

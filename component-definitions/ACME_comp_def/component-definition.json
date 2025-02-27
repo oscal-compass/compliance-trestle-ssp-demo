@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "70a2c60a-be64-403d-b586-d74b48e627f1",
+    "uuid": "bbdf7ee6-3e0a-4065-8ecf-50f4129de473",
     "metadata": {
       "title": "Demo component definition",
-      "last-modified": "2023-04-27T15:44:06.905656+10:00",
+      "last-modified": "2024-10-25T14:29:37+00:00",
       "version": "1.0",
-      "oscal-version": "1.0.4"
+      "oscal-version": "1.1.2"
     },
     "components": [
       {
-        "uuid": "4e19131e-b361-4f0e-8262-02bf4456202e",
+        "uuid": "0c410eb1-52cd-40bc-bf1d-c80126a984f9",
         "type": "service",
         "title": "IDSERVICE",
         "description": "IDSERVICE",
@@ -89,7 +89,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "1de0e05a-1deb-47ad-9a58-5476a0d3da19",
+            "uuid": "08159454-994c-49ed-8f78-f2293b1274a2",
             "source": "trestle://profiles/ACME_official/profile.json",
             "description": "ACME Official Profile",
             "set-parameters": [
@@ -108,19 +108,13 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "4387d139-7b43-49ab-8151-839729616c6f",
+                "uuid": "c6ccfcbc-4553-40e6-b4e8-eadbff8d4756",
                 "control-id": "ia-5.1",
-                "description": "REPLACE_ME",
-                "props": [
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
-                  }
-                ],
+                "description": "",
                 "statements": [
                   {
                     "statement-id": "ia-5.1_smt.a",
-                    "uuid": "06d8a905-5c21-4ae7-a274-eb4d84ed4a92",
+                    "uuid": "08cc185d-27d8-4412-9cb4-25ebf1397a39",
                     "description": "",
                     "props": [
                       {
@@ -132,33 +126,25 @@
                         "name": "Rule_Id",
                         "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                         "value": "idservice_strong_pass_enabled"
-                      },
-                      {
-                        "name": "implementation-status",
-                        "value": "planned"
                       }
                     ]
                   },
                   {
                     "statement-id": "ia-5.1_smt.e",
-                    "uuid": "eea18ea6-2a65-47fe-b66a-334f493ad25b",
+                    "uuid": "89f1f3be-d915-4134-94ab-577cba3f3c9a",
                     "description": "",
                     "props": [
                       {
                         "name": "Rule_Id",
                         "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                         "value": "idservice_password_not_reuse_min_count"
-                      },
-                      {
-                        "name": "implementation-status",
-                        "value": "planned"
                       }
                     ]
                   }
                 ]
               },
               {
-                "uuid": "083b8622-9ae9-4ec2-9532-e627277ba073",
+                "uuid": "455563ca-c454-41d5-aa3b-f57843d95aab",
                 "control-id": "ia-5.4",
                 "description": "",
                 "props": [
@@ -171,15 +157,11 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "idservice_strong_pass_enabled"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "549bf6cb-671a-4343-bfb8-5b601451daf9",
+                "uuid": "8d18be8a-232a-42dd-8554-f3ff42770915",
                 "control-id": "cc-1",
                 "description": "",
                 "props": [
@@ -192,15 +174,11 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "idservice_strong_pass_enabled"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "a3e402eb-0557-463f-a8d9-6ed35172ddaf",
+                "uuid": "9fda67bf-8e40-47ea-830f-d045ce5113d9",
                 "control-id": "cc-2",
                 "description": "",
                 "props": [
@@ -208,15 +186,11 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "idservice_password_min_length"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "005bfc9c-b0e3-435f-bc45-84e548b80f8e",
+                "uuid": "2c457819-da30-44a3-9497-b2838f7cbdd1",
                 "control-id": "pr-1",
                 "description": "",
                 "props": [
@@ -224,15 +198,11 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "idservice_password_min_length"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "4a60d015-0aa6-4c0f-b646-e6f5383c37ad",
+                "uuid": "a5cdefdc-7f6b-4ffa-849f-196785e6432f",
                 "control-id": "pr-2",
                 "description": "",
                 "props": [
@@ -240,15 +210,11 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "idservice_password_not_reuse_min_count"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "ae71e3af-6fe4-4dc3-8399-588b51798587",
+                "uuid": "1c4da059-486c-4383-b564-6aa57229ab6a",
                 "control-id": "sc-1",
                 "description": "",
                 "props": [
@@ -256,10 +222,6 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "idservice_password_not_reuse_min_count"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               }
@@ -268,7 +230,7 @@
         ]
       },
       {
-        "uuid": "c646a995-9dc7-46e5-8d89-6b8fd71cb8b5",
+        "uuid": "bc679ca3-6158-4e9a-be30-0ba9bf87c90d",
         "type": "service",
         "title": "DB",
         "description": "DB",
@@ -348,7 +310,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "a7df6b70-bc85-4437-8e35-bfbffab79fe0",
+            "uuid": "9f9d0702-443c-4ad4-be0e-3034875e03e8",
             "source": "trestle://profiles/ACME_official/profile.json",
             "description": "ACME Official Profile",
             "set-parameters": [
@@ -367,52 +329,38 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "59862988-ce24-48d2-846f-5eb71e63b874",
+                "uuid": "833ae216-6c40-414d-a6fb-a2974da2c632",
                 "control-id": "ia-5.1",
-                "description": "REPLACE_ME",
-                "props": [
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
-                  }
-                ],
+                "description": "",
                 "statements": [
                   {
                     "statement-id": "ia-5.1_smt.a",
-                    "uuid": "def43332-9221-4675-a14a-82564f60581d",
+                    "uuid": "6287e1ba-ba17-4fa4-9b35-2466f422a760",
                     "description": "",
                     "props": [
                       {
                         "name": "Rule_Id",
                         "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                         "value": "db_password_min_length"
-                      },
-                      {
-                        "name": "implementation-status",
-                        "value": "planned"
                       }
                     ]
                   },
                   {
                     "statement-id": "ia-5.1_smt.e",
-                    "uuid": "0f94a49e-f82b-4d54-90a5-75e532a10cbf",
+                    "uuid": "b6ec5fd9-cc8f-4191-8858-b1e293a49fad",
                     "description": "",
                     "props": [
                       {
                         "name": "Rule_Id",
                         "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                         "value": "db_password_not_reuse_min_count"
-                      },
-                      {
-                        "name": "implementation-status",
-                        "value": "planned"
                       }
                     ]
                   }
                 ]
               },
               {
-                "uuid": "4d64d178-2483-4654-bcb6-f242fb3217c3",
+                "uuid": "680bd080-377f-4b30-8fa3-c073130bbaa9",
                 "control-id": "ia-5.4",
                 "description": "",
                 "props": [
@@ -420,15 +368,11 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "db_password_min_length"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "5505f2f4-b52f-4f49-9264-e2d6d8d1d979",
+                "uuid": "e6af93dd-a257-4eb7-b0ec-58fa5e2f6c46",
                 "control-id": "cc-1",
                 "description": "",
                 "props": [
@@ -436,15 +380,11 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "db_password_min_length"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "ba2517b4-9ddc-45b8-9628-2b6563cfc254",
+                "uuid": "6842102e-a5e9-43c6-b54c-5db3d8c36c6b",
                 "control-id": "pr-2",
                 "description": "",
                 "props": [
@@ -457,15 +397,11 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "db_password_not_reuse_min_count"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "de2c5ab4-c415-4b05-856f-abb9591f970e",
+                "uuid": "58324fa2-f516-4870-ac56-e5c76f0a3a6b",
                 "control-id": "pr-1",
                 "description": "",
                 "props": [
@@ -473,15 +409,11 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "db_password_not_reuse_min_count"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "9fe5dd88-077b-4abf-b3fd-406d0076ef58",
+                "uuid": "bf764edc-707d-485b-a976-a44281093fd6",
                 "control-id": "sc-2",
                 "description": "",
                 "props": [
@@ -489,37 +421,23 @@
                     "name": "Rule_Id",
                     "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                     "value": "db_password_not_reuse_min_count"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "450ffcef-acb4-4792-af1d-32f2cb646d08",
+                "uuid": "9d15e8e9-1062-49da-8cd8-640ef317db32",
                 "control-id": "ac-2",
-                "description": "REPLACE_ME",
-                "props": [
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
-                  }
-                ],
+                "description": "",
                 "statements": [
                   {
                     "statement-id": "ac-2_smt.d",
-                    "uuid": "1e65c1ef-c82c-4aa7-b4d3-d07075719381",
+                    "uuid": "52d504ed-8600-43c6-8cb2-a32b73e48c3c",
                     "description": "",
                     "props": [
                       {
                         "name": "Rule_Id",
                         "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd",
                         "value": "db_authorized_users_only"
-                      },
-                      {
-                        "name": "implementation-status",
-                        "value": "planned"
                       }
                     ]
                   }

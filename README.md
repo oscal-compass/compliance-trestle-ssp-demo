@@ -1,6 +1,8 @@
+# <img alt="Logo" width="50px" src="https://raw.githubusercontent.com/oscal-compass/compliance-trestle/main/images/compliance-trestle-800x800.png" style="vertical-align: middle;" /> Compliance-trestle (also known as `trestle`)
+
 # compliance-trestle-ssp-demo
 
-[Compliance-trestle](https://ibm.github.io/compliance-trestle) (trestle) is a set of tools to facilitate compliance-as-code workflows, anchored in the [Open Security Controls Assessment Language](https://pages.nist.gov/OSCAL/) (OSCAL).
+[Compliance-trestle](https://oscal-compass.github.io/compliance-trestle/) (trestle) is a set of tools to facilitate compliance-as-code workflows, anchored in the [Open Security Controls Assessment Language](https://pages.nist.gov/OSCAL/) (OSCAL).
 
 This demo requires trestle release 2.1.1 or greater.
 
@@ -61,3 +63,16 @@ A sync between the OSCAL and markdown equaivalents can be triggered by running `
 1. In the `TABLE OF PARAMETERS` for `AC-1` note that the Parameter ID's have a more readable form such as `AC-1 Personnel` instead of `ac-1_prm_1`.  This is because a `display-name` property was assigned in the ACME internal guidance profile.  You will also see those values in the corresponding markdown files for the profile.  To add or change a display name you can either edit the original profile or the markdown header for the control, following the example for `AC-1`.
 1. If the jinja command fails with a kind of "template error" it may be caused by an errant `{}` construct in the markdown.  Inspection of the markdown for such braces may identify the problem.
 1. Many of the commands in the jinja template have additional options to control the format of the final word document.  Consult the `trestle` API if formatting changes are desired.
+
+______________________________________________________________________
+
+We are a Cloud Native Computing Foundation sandbox project.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://www.cncf.io/wp-content/uploads/2022/07/cncf-white-logo.svg">
+  <img src="https://www.cncf.io/wp-content/uploads/2022/07/cncf-color-bg.svg" width=300 />
+</picture>
+
+The Linux Foundation® (TLF) has registered trademarks and uses trademarks. For a list of TLF trademarks, see [Trademark Usage](https://www.linuxfoundation.org/legal/trademark-usage)".
+
+*Trestle was originally created by IBM.*

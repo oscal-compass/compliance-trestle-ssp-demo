@@ -43,6 +43,22 @@ ssp-markdown: update-markdown
 ssp-word: ssp-markdown
 	pandoc ACME_platform_ssp.md --from markdown+table_captions+implicit_figures+rebase_relative_paths -t docx --reference-doc ssp_word_template.docx -s --toc -o ACME_platform_ssp.docx
 
+# demonstrate transport from updated cd markdown to ssp json
+transport:
+# add control description "This is a test description." and modify implementation status to "operational"
+	cp -p assets/transport/ia/ia-5.4.md md_ACME_comp_def/DB/ACME_official/ia/ia-5.4.md
+# create comp def json file from markdown
+	trestle author component-assemble -m md_ACME_comp_def -o ACME_comp_def
+# create ssp markdown from comp def json et. al.
+	rm -f system-security-plans/ACME_SSP/system-security-plan.json
+	rm -fr md_ACME_platform_ssp
+	trestle author ssp-generate -cd ACME_comp_def --profile ACME_int_guidance --output md_ACME_platform_ssp -y assets/extra-ssp-metadata.yml
+# create ssp json file from markdown
+	trestle author ssp-assemble -m md_ACME_platform_ssp -cd ACME_comp_def -o ACME_SSP
+# display
+	sed -n '383p' system-security-plans/ACME_SSP/system-security-plan.json
+	sed -n '400p' system-security-plans/ACME_SSP/system-security-plan.json
+	
 clean:
 	rm -rf md_*
 	rm -rf component-definitions/ACME

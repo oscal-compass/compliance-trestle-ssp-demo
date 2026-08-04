@@ -64,7 +64,7 @@ A sync between the OSCAL and markdown equaivalents can be triggered by running `
 1. If the jinja command fails with a kind of "template error" it may be caused by an errant `{}` construct in the markdown.  Inspection of the markdown for such braces may identify the problem.
 1. Many of the commands in the jinja template have additional options to control the format of the final word document.  Consult the `trestle` API if formatting changes are desired.
 
-______________________________________________________________________
+-----
 
 We are a Cloud Native Computing Foundation sandbox project.
 
@@ -73,8 +73,8 @@ We are a Cloud Native Computing Foundation sandbox project.
   <img src="https://www.cncf.io/wp-content/uploads/2022/07/cncf-color-bg.svg" width=300 />
 </picture>
 
-The Linux Foundation® (TLF) has registered trademarks and uses trademarks. For a list of TLF trademarks, see [Trademark Usage](https://www.linuxfoundation.org/legal/trademark-usage)".
+The Linux Foundation® (TLF) has registered trademarks and uses trademarks. For a list of TLF trademarks, see [Trademark Usage](https://www.linuxfoundation.org/legal/trademark-usage).
 
 *OSCAL Compass is an independent open source project. It is not affiliated with, endorsed by, or sponsored by the National Institute of Standards and Technology (NIST) or any other government agency.*
 
-*Trestle was originally created by IBM.*
+*OSCAL Compass was originally contributed by IBM.*

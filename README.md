@@ -64,7 +64,7 @@ A sync between the OSCAL and markdown equaivalents can be triggered by running `
 1. If the jinja command fails with a kind of "template error" it may be caused by an errant `{}` construct in the markdown.  Inspection of the markdown for such braces may identify the problem.
 1. Many of the commands in the jinja template have additional options to control the format of the final word document.  Consult the `trestle` API if formatting changes are desired.
 
------
+______________________________________________________________________
 
 We are a Cloud Native Computing Foundation sandbox project.
 

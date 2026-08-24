@@ -4,7 +4,7 @@
 
 [Compliance-trestle](https://oscal-compass.github.io/compliance-trestle/) (trestle) is a set of tools to facilitate compliance-as-code workflows, anchored in the [Open Security Controls Assessment Language](https://pages.nist.gov/OSCAL/) (OSCAL).
 
-This demo requires trestle release 2.1.1 or greater.
+This demo requires trestle release 5.0.0 or greater.
 
 This repository illustrates how to use `trestle author` functionality to make OSCAL more approachable. 
 Specifically it shows how some tasks, such as writing corporate guidance, SSP control implementation descriptions and setting of parameters can be simplified using a markdown workflow.
@@ -36,7 +36,7 @@ The diagram above shows how the repository operates. Red boxes are OSCAL json ob
 
 The green line on the left encircles the source artefacts from which all the other documents are derived.  A clean operation will leave only those artefacts and delete the rest.
 ## Running this demo locally:
-- Trestle version 2.1.1 and above is required.
+- Trestle version 5.0.0 and above is required.
 - Users will need to [install pandoc](https://pandoc.org/installing.html). Known to work above version `2.16.2`
 - This demo has requirements that can be loaded with `make install`.
 
@@ -56,6 +56,33 @@ A sync between the OSCAL and markdown equaivalents can be triggered by running `
 1. The normal editing process involves selectively editing the markdown files and running `make update-oscal` to incorporate any edits into the corresponding OSCAL JSON files.
 1. If the rules or components are changed in the CSV, the command `make create-comp-def` must be run to have trestle execute a task to convert the CSV to OSCAL JSON.
 1. `make clean` will remove all generated artefacts and markdown, providing a fresh start that begins with `make initialize-markdown`.
+
+## Signed SSP releases
+
+Pushing a version tag such as `v0.3.0` runs the release workflow. The workflow rebuilds the SSP, discovers its related OSCAL JSON artifacts, and creates a signed package containing:
+
+- the SSP and its catalog, profile, and component-definition dependencies;
+- `ssp-signing-manifest.json`, which records the package structure;
+- `ssp-signing-manifest.dsse`, which signs the canonical SHA-256 digest of every listed JSON artifact.
+
+The workflow verifies the package before publishing `ACME_ssp_package-<tag>.tar.gz` as a GitHub Release asset. The archive preserves the relative paths required by `trestle verify-manifest`.
+
+The repository must define these GitHub Actions secrets:
+
+- `SSP_SIGNING_PRIVATE_KEY`: the encrypted PEM private key used to sign the package;
+- `SSP_SIGNING_KEY_PASSWORD`: the private-key password;
+- `SSP_SIGNING_PUBLIC_KEY`: the trusted PEM public key used for the release verification check.
+
+Downstream workflows must pin the trusted public key independently and verify the extracted package before using its artifacts. A public key obtained only from the same release is not an independent trust source.
+
+```bash
+tar -xzf ACME_ssp_package-v0.3.0.tar.gz
+trestle verify-manifest \
+  --beta \
+  --manifest ssp-signing-manifest.json \
+  --signature ssp-signing-manifest.dsse \
+  --public-key trusted-ssp-public.pem
+```
 
 ## Important notes
 1. In the final ssp the control statements are modified to include final values for parameters referenced by the prose.  The manner of parameter substitution can be controlled by the `--bracket-format` and `--value-assigned-prefix` options of the jinja command in `make ssp-markdown`.  The values given in this demo cause brackets to be placed around parameter substitutions, and if a value was assigned by the profile imported by the ssp, it is prefixed with `ACME assigned:`  For example, in `AC-1.a` you will find `disseminates to [ACME Assigned: all personnel]:` whereas in `ac-2_prm_2` no value is assigned by the profile, so instead of substituting `ACME assigned:` and the values, the label for the parameter is placed in the brackets instead.

@@ -7,7 +7,6 @@
       "version": "REPLACE_ME",
       "oscal-version": "1.0.0"
     },
-    "params": [],
     "groups": [
       {
         "id": "cc",

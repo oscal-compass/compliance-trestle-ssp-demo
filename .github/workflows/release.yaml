@@ -1,0 +1,81 @@
+name: Release SSP artifacts
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      SIGNING_MANIFEST: ssp-signing-manifest.json
+      SIGNING_ENVELOPE: ssp-signing-manifest.dsse
+      TRESTLE_BETA_FEATURES: json-manifest-signing
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - name: Install dependencies
+        run: make install
+      - name: Build OSCAL artifacts
+        run: make update-oscal
+
+      - name: Configure signing keys
+        env:
+          SSP_SIGNING_PRIVATE_KEY: ${{ secrets.SSP_SIGNING_PRIVATE_KEY }}
+          SSP_SIGNING_PUBLIC_KEY: ${{ secrets.SSP_SIGNING_PUBLIC_KEY }}
+        run: |
+          test -n "$SSP_SIGNING_PRIVATE_KEY"
+          test -n "$SSP_SIGNING_PUBLIC_KEY"
+          umask 077
+          printf '%s\n' "$SSP_SIGNING_PRIVATE_KEY" > "$RUNNER_TEMP/ssp-private.pem"
+          printf '%s\n' "$SSP_SIGNING_PUBLIC_KEY" > "$RUNNER_TEMP/ssp-public.pem"
+
+      - name: Generate signed SSP package
+        env:
+          SSP_SIGNING_KEY_PASSWORD: ${{ secrets.SSP_SIGNING_KEY_PASSWORD }}
+        run: |
+          test -n "$SSP_SIGNING_KEY_PASSWORD"
+          trestle generate-manifest \
+            -f system-security-plans/ACME_SSP/system-security-plan.json \
+            --include component-definitions/ACME_comp_def/component-definition.json \
+            --overwrite \
+            -o "$SIGNING_MANIFEST"
+          trestle sign-manifest \
+            --manifest "$SIGNING_MANIFEST" \
+            --private-key "$RUNNER_TEMP/ssp-private.pem" \
+            --key-password-env SSP_SIGNING_KEY_PASSWORD \
+            --overwrite \
+            -o "$SIGNING_ENVELOPE"
+          trestle verify-manifest \
+            --manifest "$SIGNING_MANIFEST" \
+            --signature "$SIGNING_ENVELOPE" \
+            --public-key "$RUNNER_TEMP/ssp-public.pem"
+
+      - name: Create SSP package archive
+        run: |
+          jq -r '.artifacts[].uri' "$SIGNING_MANIFEST" > "$RUNNER_TEMP/ssp-package-files.txt"
+          printf '%s\n' "$SIGNING_MANIFEST" "$SIGNING_ENVELOPE" >> "$RUNNER_TEMP/ssp-package-files.txt"
+          tar -czf "$RUNNER_TEMP/ACME_ssp_package-${GITHUB_REF_NAME}.tar.gz" \
+            -T "$RUNNER_TEMP/ssp-package-files.txt"
+
+      - name: Publish release assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          asset="$RUNNER_TEMP/ACME_ssp_package-${GITHUB_REF_NAME}.tar.gz"
+          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" "$asset"
+          else
+            gh release create "$GITHUB_REF_NAME" "$asset" --verify-tag --generate-notes
+          fi
+
+      - name: Remove signing keys
+        if: always()
+        run: rm -f "$RUNNER_TEMP/ssp-private.pem" "$RUNNER_TEMP/ssp-public.pem"

@@ -30,9 +30,7 @@
       }
     ],
     "merge": {
-      "combine": {
-        "method": "merge"
-      },
+      "combine": {},
       "as-is": true
     },
     "modify": {
